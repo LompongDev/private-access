@@ -3,88 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Private Adult Access | Exclusive Mature Content</title>
 <meta name="description" content="Restricted adult-oriented content. Limited public preview. Verification required to access exclusive mature platforms.">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Poppins,Arial;
-background:#0b0e19;
-color:#eaeaea;
-line-height:1.8;
-}
-
-/* NOTICE */
-.notice{
-background:#151a2f;
-color:#ff8bd1;
-text-align:center;
-padding:12px;
-font-size:14px;
-}
+body{font-family:Poppins,Arial;background:#0b0e19;color:#eaeaea;line-height:1.85}
+.notice{background:#151a2f;color:#ff8bd1;text-align:center;padding:12px;font-size:14px}
 
 /* HEADER */
-header{
-background:linear-gradient(135deg,#ff0066,#7a00ff);
-padding:90px 18px 110px;
-text-align:center;
-}
-header h1{
-font-size:clamp(30px,6vw,64px);
-font-weight:800;
-letter-spacing:2px;
-}
-header h1 span{
-display:block;
-font-size:clamp(14px,2.5vw,18px);
-font-weight:400;
-margin-top:14px;
-}
-header a{
-display:inline-block;
-margin-top:38px;
-padding:18px 56px;
-background:#fff;
-color:#7a00ff;
-font-weight:800;
-border-radius:80px;
-text-decoration:none;
-}
+header{background:linear-gradient(135deg,#ff0066,#7a00ff);padding:88px 18px 110px;text-align:center}
+header h1{font-size:clamp(28px,6vw,62px);font-weight:800;letter-spacing:2px}
+header h1 span{display:block;font-size:clamp(14px,2.5vw,18px);font-weight:400;margin-top:14px}
+header .cta-btn{display:inline-block;margin-top:38px;padding:18px 56px;background:#fff;color:#7a00ff;font-weight:800;border-radius:80px;text-decoration:none}
 
 /* NAV */
-nav{
-position:sticky;
-top:0;
-z-index:2000;
-background:#0b0e19;
-display:flex;
-justify-content:center;
-gap:26px;
-padding:14px;
-}
-nav a{
-color:#ff7ac7;
-text-decoration:none;
-font-weight:600;
-}
+nav{position:sticky;top:0;z-index:2000;background:#0b0e19;display:flex;justify-content:center;gap:26px;padding:14px}
+nav a{color:#ff7ac7;text-decoration:none;font-weight:600}
 
 /* MAIN */
-main{
-max-width:1200px;
-margin:auto;
-padding:36px 16px;
-}
-article{
-background:#151a2f;
-padding:52px;
-border-radius:26px;
-}
-
-/* TEXT */
+main{max-width:1200px;margin:auto;padding:36px 16px}
+article{background:#151a2f;padding:52px;border-radius:26px}
 h2{color:#ff7ac7;font-size:clamp(22px,4vw,36px)}
 h3{margin-top:40px;color:#d6c8ff}
 p{margin:18px 0;color:#ddd}
@@ -92,101 +32,25 @@ ul{margin-left:22px}
 li{margin:12px 0}
 
 /* IMAGES */
-.hero-img{
-width:100%;
-border-radius:22px;
-margin:34px 0;
-filter:contrast(1.15) saturate(1.25);
-}
-.blur{
-filter:blur(6px) brightness(.9) saturate(1.2);
-}
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:16px;
-margin:36px 0;
-}
-.gallery img{
-width:100%;
-border-radius:18px;
-filter:contrast(1.15) saturate(1.2);
-}
+.hero-img{width:100%;border-radius:22px;margin:34px 0;filter:contrast(1.15) saturate(1.25)}
+.blur{filter:blur(6px) brightness(.9) saturate(1.2)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:36px 0}
+.gallery img{width:100%;border-radius:18px;filter:contrast(1.15) saturate(1.2)}
 
 /* ADS */
-.ad-center{
-display:flex;
-justify-content:center;
-margin:42px 0;
-}
+.ad-center{display:flex;justify-content:center;margin:42px 0}
 
 /* CTA */
-.cta{
-background:linear-gradient(135deg,#ff0066,#7a00ff);
-padding:42px;
-margin:56px 0;
-border-radius:28px;
-text-align:center;
-}
-.cta a{
-display:inline-block;
-margin-top:20px;
-padding:18px 52px;
-background:#fff;
-color:#7a00ff;
-font-weight:800;
-border-radius:80px;
-text-decoration:none;
-}
+.cta{background:linear-gradient(135deg,#ff0066,#7a00ff);padding:42px;margin:56px 0;border-radius:28px;text-align:center}
+.cta a{display:inline-block;margin-top:20px;padding:18px 52px;background:#fff;color:#7a00ff;font-weight:800;border-radius:80px;text-decoration:none}
 
 /* FLOATING MENU */
-#hamburger{
-position:fixed;
-left:18px;
-bottom:26px;
-width:58px;
-height:58px;
-background:#ff0066;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:26px;
-cursor:pointer;
-z-index:5000;
-box-shadow:0 0 25px rgba(255,0,102,.6);
-}
-#menu{
-position:fixed;
-left:18px;
-bottom:100px;
-background:#151a2f;
-padding:16px;
-border-radius:18px;
-display:none;
-flex-direction:column;
-gap:12px;
-z-index:5000;
-}
-#menu a{
-color:#ff7ac7;
-text-decoration:none;
-font-weight:600;
-}
+#hamburger{position:fixed;left:18px;bottom:26px;width:58px;height:58px;background:#ff0066;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer;z-index:5000;box-shadow:0 0 25px rgba(255,0,102,.6)}
+#menu{position:fixed;left:18px;bottom:100px;background:#151a2f;padding:16px;border-radius:18px;display:none;flex-direction:column;gap:12px;z-index:5000}
+#menu a{color:#ff7ac7;text-decoration:none;font-weight:600}
 
 /* STICKY BANNER */
-#sticky-banner{
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#0b0e19;
-padding:10px 0;
-display:none;
-justify-content:center;
-z-index:4000;
-}
+#sticky-banner{position:fixed;bottom:0;left:0;width:100%;background:#0b0e19;padding:10px 0;display:none;justify-content:center;z-index:4000}
 
 /* MOBILE */
 @media(max-width:768px){
@@ -197,111 +61,83 @@ header{padding:70px 16px 90px}
 </head>
 
 <body>
-
-<div class="notice">
-⚠️ Adult-oriented references. 18+ only. Access may be restricted by region or device.
-</div>
+<div class="notice">⚠️ Adult-oriented references. 18+ only. Access may be restricted by region or device.</div>
 
 <header>
-<h1>PRIVATE ADULT ACCESS
-<span>Restricted • Mature • Exclusive Platforms</span>
-</h1>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Verify & Continue
-</a>
+  <h1>PRIVATE ADULT ACCESS
+    <span>Restricted • Mature • Exclusive Platforms</span>
+  </h1>
+  <a class="cta-btn" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify & Continue</a>
 </header>
 
 <nav>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Private</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Private</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
 </nav>
 
 <main>
 <article>
+  <h2>Exclusive Adult Content — Limited Public Preview</h2>
+  <p>This page references private adult-oriented platforms for mature audiences. Public previews are intentionally limited. Full access may require verification through partner networks.</p>
 
-<h2>Exclusive Adult Content — Limited Public Preview</h2>
+  <!-- HERO (WANITA SAJA – LOKAL) -->
+  <img class="hero-img" src="assets/img/hero-1.jpg" alt="Adult woman preview">
+  <img class="hero-img blur" src="assets/img/hero-2.jpg" alt="Blurred adult woman">
 
-<p>
-This page references private adult-oriented platforms for mature audiences.
-Public previews are intentionally limited due to compliance requirements.
-Verification may be required to access full content.
-</p>
+  <div class="ad-center">
+    <script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
+    <div id="container-74186efed8398e15725fe261ed355732"></div>
+  </div>
 
-<!-- HERO IMAGES (WANITA SEKSI ONLY) -->
-<img class="hero-img"
-src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg"
-alt="Sexy adult woman">
+  <h3>Why Access Is Restricted</h3>
+  <ul>
+    <li>Strict 18+ age verification</li>
+    <li>High demand for exclusive mature platforms</li>
+    <li>Private monetization networks</li>
+    <li>Region-based compliance</li>
+  </ul>
 
-<img class="hero-img blur"
-src="https://images.pexels.com/photos/1488460/pexels-photo-1488460.jpeg"
-alt="Blurred adult woman">
+  <!-- GALLERY (WANITA SAJA – LOKAL) -->
+  <div class="gallery">
+    <img src="assets/img/gal-1.jpg" alt="Sexy adult woman">
+    <img src="assets/img/gal-2.jpg" alt="Adult woman lingerie">
+    <img src="assets/img/gal-3.jpg" alt="Sensual female model">
+    <img src="assets/img/gal-4.jpg" alt="Exclusive mature woman">
+  </div>
 
-<!-- BANNER AD -->
-<div class="ad-center">
-<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
-<div id="container-74186efed8398e15725fe261ed355732"></div>
-</div>
-
-<h3>Why Is Access Restricted?</h3>
-<ul>
-<li>Mandatory 18+ age verification</li>
-<li>High demand for exclusive mature platforms</li>
-<li>Private monetization partner networks</li>
-<li>Region-based content compliance</li>
-</ul>
-
-<!-- GALLERY (WANITA SEKSI SEMUA) -->
-<div class="gallery">
-  <img src="https://images.pexels.com/photos/1988681/pexels-photo-1988681.jpeg" alt="sexy woman">
-  <img src="https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg" alt="sensual woman">
-  <img src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg" alt="adult woman">
-  <img src="https://images.pexels.com/photos/1988680/pexels-photo-1988680.jpeg" alt="exclusive adult woman">
-</div>
-
-<div class="cta">
-<h3>Restricted Platform Detected</h3>
-<p>Verification is required to continue.</p>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Continue to Adult Platform
-</a>
-</div>
-
+  <div class="cta">
+    <h3>Restricted Platform Detected</h3>
+    <p>Verification is required to continue.</p>
+    <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Continue</a>
+  </div>
 </article>
 </main>
 
-<footer style="text-align:center;padding:32px;color:#aaa">
-© 2025 Private Adult Access — 18+
-</footer>
+<footer style="text-align:center;padding:32px;color:#aaa">© 2025 Private Adult Access — 18+</footer>
 
 <!-- FLOATING MENU -->
 <div id="hamburger" onclick="toggleMenu()">☰</div>
 <div id="menu">
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
 </div>
 
 <!-- STICKY BANNER -->
 <div id="sticky-banner">
-<script>
-atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
-</script>
-<script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
+  <script>
+    atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
+  </script>
+  <script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
 </div>
 
 <!-- SOCIAL BAR -->
 <script src="https://ceaslessivorygoats.com/e2/a0/c0/e2a0c0614fa94d758c1c7bcddf5a2baa.js"></script>
 
 <script>
-function toggleMenu(){
-const m=document.getElementById('menu');
-m.style.display=(m.style.display==='flex')?'none':'flex';
-}
-setTimeout(()=>{
-document.getElementById('sticky-banner').style.display='flex';
-},4500);
+function toggleMenu(){const m=document.getElementById('menu');m.style.display=(m.style.display==='flex')?'none':'flex';}
+setTimeout(()=>{document.getElementById('sticky-banner').style.display='flex';},4500);
 </script>
-
 </body>
 </html>
