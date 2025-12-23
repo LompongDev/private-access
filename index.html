@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Business Hub — Private & Restricted Platforms</title>
-<meta name="description" content="Discover private, restricted, and mature digital platforms operating in high-demand global markets.">
+<title>Private Adult Access — Exclusive Mature Platforms</title>
+
+<meta name="description" content="Access private adult-oriented platforms. Mature content previews are limited. Verification may be required depending on region and device.">
+<meta name="language" content="en-US">
+<meta name="geo.region" content="US">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -13,37 +16,47 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{
 font-family:Poppins,system-ui;
-background:#0b0f1a;
+background:#0a0d17;
 color:#eaeaea;
-line-height:1.9;
+line-height:1.85;
+overflow-x:hidden;
+}
+
+/* ===== TOP NOTICE ===== */
+.notice{
+background:#14182a;
+color:#ff9bd5;
+text-align:center;
+padding:14px;
+font-size:14px;
 }
 
 /* ===== HEADER ===== */
 header{
-background:linear-gradient(135deg,#ff006a,#7f00ff);
-padding:80px 20px;
+background:linear-gradient(135deg,#ff005d,#7a00ff);
+padding:90px 20px 110px;
 text-align:center;
 }
 header h1{
-font-size:clamp(28px,6vw,60px);
+font-size:clamp(30px,6vw,64px);
 font-weight:800;
-letter-spacing:2px;
+letter-spacing:3px;
 }
 header h1 span{
 display:block;
 font-size:clamp(14px,2.5vw,18px);
 font-weight:400;
 opacity:.95;
-margin-top:12px;
+margin-top:14px;
 }
 header a{
 display:inline-block;
-margin-top:35px;
-padding:16px 48px;
+margin-top:42px;
+padding:18px 56px;
 background:#fff;
-color:#7f00ff;
+color:#7a00ff;
 font-weight:800;
-border-radius:60px;
+border-radius:80px;
 text-decoration:none;
 }
 
@@ -51,11 +64,11 @@ text-decoration:none;
 nav{
 position:sticky;
 top:0;
-z-index:1000;
-background:#0b0f1a;
+z-index:2000;
+background:#0a0d17;
 display:flex;
 justify-content:center;
-gap:28px;
+gap:30px;
 padding:14px;
 }
 nav a{
@@ -66,72 +79,91 @@ font-weight:600;
 
 /* ===== MAIN ===== */
 main{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
-padding:40px 20px;
+padding:40px 18px;
 }
 article{
-background:#141a30;
-padding:50px;
-border-radius:24px;
+background:#14182a;
+padding:55px;
+border-radius:26px;
 }
 
-/* ===== CONTENT ===== */
-h2{color:#ff7ac7;font-size:clamp(22px,4vw,34px)}
-h3{margin-top:40px;color:#c9b8ff}
+/* ===== TEXT ===== */
+h2{color:#ff7ac7;font-size:clamp(22px,4vw,36px)}
+h3{margin-top:42px;color:#d6c8ff}
 p{margin:18px 0;color:#ddd}
 ul{margin-left:22px}
-li{margin:12px 0}
+li{margin:14px 0}
 
-/* ===== IMAGE ===== */
+/* ===== IMAGES ===== */
 .hero-img{
 width:100%;
-border-radius:20px;
-margin:35px 0;
+border-radius:22px;
+margin:36px 0;
 }
-.blur{filter:blur(6px) brightness(.85)}
+.blur{
+filter:blur(7px) brightness(.8);
+}
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:16px;
-margin:35px 0;
+gap:18px;
+margin:38px 0;
 }
-.gallery img{width:100%;border-radius:16px}
+.gallery img{
+width:100%;
+border-radius:18px;
+}
 
 /* ===== CTA ===== */
 .cta{
-background:linear-gradient(135deg,#ff006a,#7f00ff);
-padding:36px;
-margin:50px 0;
-border-radius:24px;
+background:linear-gradient(135deg,#ff005d,#7a00ff);
+padding:44px;
+margin:60px 0;
+border-radius:28px;
 text-align:center;
 }
 .cta a{
 display:inline-block;
-margin-top:18px;
-padding:16px 46px;
+margin-top:22px;
+padding:18px 52px;
 background:#fff;
-color:#7f00ff;
+color:#7a00ff;
 font-weight:800;
-border-radius:60px;
+border-radius:80px;
 text-decoration:none;
+}
+
+/* ===== RELATED ===== */
+.related{
+margin-top:50px;
+padding-top:30px;
+border-top:1px solid rgba(255,255,255,.1);
+}
+.related a{
+display:block;
+margin:14px 0;
+color:#ff7ac7;
+text-decoration:none;
+font-weight:600;
 }
 
 /* ===== ADS ===== */
 .ad-center{
 display:flex;
 justify-content:center;
-margin:40px 0;
+margin:46px 0;
 }
 
-/* ===== FLOATING HAMBURGER ===== */
+/* ===== FLOATING MENU ===== */
 #hamburger{
 position:fixed;
 left:18px;
-bottom:24px;
-width:56px;
-height:56px;
-background:#ff006a;
+bottom:26px;
+width:58px;
+height:58px;
+background:#ff005d;
 color:#fff;
 border-radius:50%;
 display:flex;
@@ -139,19 +171,20 @@ align-items:center;
 justify-content:center;
 font-size:26px;
 cursor:pointer;
-z-index:3000;
+z-index:5000;
+box-shadow:0 0 25px rgba(255,0,93,.6);
 }
 #menu{
 position:fixed;
 left:18px;
-bottom:95px;
-background:#141a30;
-padding:16px;
-border-radius:16px;
+bottom:100px;
+background:#14182a;
+padding:18px;
+border-radius:18px;
 display:none;
 flex-direction:column;
-gap:12px;
-z-index:3000;
+gap:14px;
+z-index:5000;
 }
 #menu a{
 color:#ff7ac7;
@@ -165,61 +198,64 @@ position:fixed;
 bottom:0;
 left:0;
 width:100%;
-background:#0b0f1a;
-padding:10px 0;
-display:flex;
+background:#0a0d17;
+padding:12px 0;
+display:none;
 justify-content:center;
 z-index:4000;
 }
 
 /* ===== MOBILE ===== */
 @media(max-width:768px){
-article{padding:30px}
-header{padding:65px 18px}
+article{padding:34px}
+header{padding:70px 18px 90px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="notice">
+⚠️ This page contains adult-oriented references. Access may be restricted based on age, region, or device.
+</div>
+
 <header>
-<h1>AI BUSINESS HUB
-<span>Private • Restricted • Mature Digital Platforms</span>
+<h1>PRIVATE ADULT ACCESS
+<span>Mature • Restricted • Exclusive Platforms</span>
 </h1>
 <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Enter Private Area
+Verify & Continue
 </a>
 </header>
 
 <nav>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Access</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Private</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Private Area</a>
 <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
 </nav>
 
 <main>
 <article>
 
-<h2>You May Be Looking for Adult-Oriented Platforms</h2>
+<h2>Adult Content Access — Limited Preview</h2>
 
 <p>
-Many visitors arrive here expecting sensual or adult-style environments.
-That expectation is understandable.
+You are visiting a page that references <strong>adult-oriented and mature platforms</strong>.
+These platforms are not publicly indexed and are often hidden due to regional
+restrictions, age verification policies, and private partner agreements.
 </p>
 
 <p>
-The reality is that the most profitable platforms today operate quietly inside
-restricted and mature markets — where access is limited and content visibility
-is controlled.
+Many visitors arrive here looking for exclusive adult experiences, private galleries,
+or mature communities that are not available through standard search engines.
 </p>
 
-<img class="hero-img" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1600&auto=format&fit=crop">
-
+<img class="hero-img" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1600&auto=format&fit=crop">
 <img class="hero-img blur" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop">
 
 <p>
-Preview content is intentionally limited.  
-Some platforms restrict visibility until access is granted.
+Due to compliance rules, <strong>full previews cannot be displayed publicly</strong>.
+Some visuals are intentionally blurred or partially hidden.
 </p>
 
 <div class="ad-center">
@@ -227,44 +263,51 @@ Some platforms restrict visibility until access is granted.
 <div id="container-74186efed8398e15725fe261ed355732"></div>
 </div>
 
-<h3>Why Restricted Platforms Generate Higher Revenue</h3>
+<h3>Why Adult Platforms Are Restricted</h3>
 <ul>
-<li>High user intent traffic</li>
-<li>Subscription and action-based monetization</li>
-<li>Limited exposure increases advertiser value</li>
-<li>Strong global demand</li>
+<li>Age verification requirements (18+)</li>
+<li>High demand in US & EU regions</li>
+<li>Private monetization networks</li>
+<li>Limited public exposure by design</li>
 </ul>
 
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800">
 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800">
 <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800">
+<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800">
 </div>
 
 <div class="cta">
-<h3>Unlock Full Access</h3>
-<p>Availability may change by region and device.</p>
+<h3>Restricted Adult Access Detected</h3>
+<p>Verification may be required to continue to mature partner platforms.</p>
 <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Continue to Private Platform
+Continue to Adult Platform
 </a>
+</div>
+
+<div class="related">
+<h3>More Adult Areas</h3>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">• Exclusive Adult Galleries</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">• Private Mature Communities</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">• Region-Based Adult Access</a>
 </div>
 
 </article>
 </main>
 
-<footer style="text-align:center;padding:30px;color:#aaa">
-© 2025 AI Business Hub
+<footer style="text-align:center;padding:34px;color:#aaa">
+© 2025 Private Adult Access — 18+
 </footer>
 
 <!-- FLOATING MENU -->
 <div id="hamburger" onclick="toggleMenu()">☰</div>
 <div id="menu">
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
 <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Continue</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
 </div>
 
-<!-- STICKY LONG BANNER -->
+<!-- STICKY BANNER (DELAY) -->
 <div id="sticky-banner">
 <script>
 atOptions={
@@ -286,6 +329,9 @@ function toggleMenu(){
 const m=document.getElementById('menu');
 m.style.display=m.style.display==='flex'?'none':'flex';
 }
+setTimeout(()=>{
+document.getElementById('sticky-banner').style.display='flex';
+},4500);
 </script>
 
 </body>
