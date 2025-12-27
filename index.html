@@ -3,141 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Adult Access | Exclusive Mature Content</title>
-<meta name="description" content="Restricted adult-oriented content. Limited public preview. Verification required to access exclusive mature platforms.">
+
+<title>Private Subscription Platform | Secure Digital Access</title>
+
+<meta name="description" content="A premium subscription-based digital access platform for mature audiences. Built with privacy-first architecture, secure delivery systems, and controlled access technology.">
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,Arial;background:#0b0e19;color:#eaeaea;line-height:1.85}
-.notice{background:#151a2f;color:#ff8bd1;text-align:center;padding:12px;font-size:14px}
+body{
+font-family:Poppins,Arial;
+background:#0a0d1c;
+color:#eaeaea;
+line-height:1.9;
+}
+
+.notice{
+background:#101634;
+color:#9fb7ff;
+text-align:center;
+padding:12px;
+font-size:13px;
+letter-spacing:.3px;
+}
 
 /* HEADER */
-header{background:linear-gradient(135deg,#ff0066,#7a00ff);padding:88px 18px 110px;text-align:center}
-header h1{font-size:clamp(28px,6vw,62px);font-weight:800;letter-spacing:2px}
-header h1 span{display:block;font-size:clamp(14px,2.5vw,18px);font-weight:400;margin-top:14px}
-header .cta-btn{display:inline-block;margin-top:38px;padding:18px 56px;background:#fff;color:#7a00ff;font-weight:800;border-radius:80px;text-decoration:none}
+header{
+background:linear-gradient(135deg,#3a1c71,#4776e6);
+padding:96px 18px 130px;
+text-align:center;
+}
+
+header h1{
+font-size:clamp(30px,6vw,64px);
+font-weight:800;
+letter-spacing:1.6px;
+}
+
+header h1 span{
+display:block;
+font-size:clamp(14px,2.4vw,18px);
+font-weight:400;
+margin-top:14px;
+opacity:.9;
+}
+
+header .cta-btn{
+display:inline-block;
+margin-top:44px;
+padding:18px 60px;
+background:#fff;
+color:#2b4cff;
+font-weight:800;
+border-radius:90px;
+text-decoration:none;
+}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:2000;background:#0b0e19;display:flex;justify-content:center;gap:26px;padding:14px}
-nav a{color:#ff7ac7;text-decoration:none;font-weight:600}
+nav{
+position:sticky;
+top:0;
+z-index:3000;
+background:#0a0d1c;
+display:flex;
+justify-content:center;
+gap:32px;
+padding:14px;
+border-bottom:1px solid #1c2348;
+}
+
+nav a{
+color:#9fb7ff;
+text-decoration:none;
+font-weight:600;
+}
 
 /* MAIN */
-main{max-width:1200px;margin:auto;padding:36px 16px}
-article{background:#151a2f;padding:52px;border-radius:26px}
-h2{color:#ff7ac7;font-size:clamp(22px,4vw,36px)}
-h3{margin-top:40px;color:#d6c8ff}
-p{margin:18px 0;color:#ddd}
-ul{margin-left:22px}
-li{margin:12px 0}
+main{
+max-width:1200px;
+margin:auto;
+padding:42px 16px;
+}
+
+article{
+background:#101634;
+padding:60px;
+border-radius:32px;
+}
+
+h2{
+color:#9fb7ff;
+font-size:clamp(24px,4vw,38px);
+}
+
+h3{
+margin-top:44px;
+color:#dbe4ff;
+}
+
+p{
+margin:20px 0;
+color:#d8dcff;
+}
+
+ul{
+margin-left:22px;
+}
+
+li{
+margin:14px 0;
+}
 
 /* IMAGES */
-.hero-img{width:100%;border-radius:22px;margin:34px 0;filter:contrast(1.15) saturate(1.25)}
-.blur{filter:blur(6px) brightness(.9) saturate(1.2)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:36px 0}
-.gallery img{width:100%;border-radius:18px;filter:contrast(1.15) saturate(1.2)}
+.hero-img{
+width:100%;
+border-radius:26px;
+margin:40px 0;
+filter:contrast(1.08) saturate(1.12);
+}
+
+.blur{
+filter:blur(7px) brightness(.9) saturate(1.1);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin:44px 0;
+}
+
+.gallery img{
+width:100%;
+border-radius:18px;
+filter:contrast(1.08) saturate(1.12);
+}
 
 /* ADS */
-.ad-center{display:flex;justify-content:center;margin:42px 0}
+.ad-center{
+display:flex;
+justify-content:center;
+margin:56px 0;
+}
 
 /* CTA */
-.cta{background:linear-gradient(135deg,#ff0066,#7a00ff);padding:42px;margin:56px 0;border-radius:28px;text-align:center}
-.cta a{display:inline-block;margin-top:20px;padding:18px 52px;background:#fff;color:#7a00ff;font-weight:800;border-radius:80px;text-decoration:none}
+.cta{
+background:linear-gradient(135deg,#3a1c71,#4776e6);
+padding:48px;
+margin:70px 0;
+border-radius:34px;
+text-align:center;
+}
 
-/* FLOATING MENU */
-#hamburger{position:fixed;left:18px;bottom:26px;width:58px;height:58px;background:#ff0066;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer;z-index:5000;box-shadow:0 0 25px rgba(255,0,102,.6)}
-#menu{position:fixed;left:18px;bottom:100px;background:#151a2f;padding:16px;border-radius:18px;display:none;flex-direction:column;gap:12px;z-index:5000}
-#menu a{color:#ff7ac7;text-decoration:none;font-weight:600}
+.cta a{
+display:inline-block;
+margin-top:24px;
+padding:18px 58px;
+background:#fff;
+color:#2b4cff;
+font-weight:800;
+border-radius:90px;
+text-decoration:none;
+}
 
-/* STICKY BANNER */
-#sticky-banner{position:fixed;bottom:0;left:0;width:100%;background:#0b0e19;padding:10px 0;display:none;justify-content:center;z-index:4000}
+/* FLOAT */
+#hamburger{
+position:fixed;
+left:18px;
+bottom:26px;
+width:58px;
+height:58px;
+background:#3a1c71;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+cursor:pointer;
+z-index:6000;
+box-shadow:0 0 30px rgba(71,118,230,.6);
+}
 
-/* MOBILE */
+#menu{
+position:fixed;
+left:18px;
+bottom:100px;
+background:#101634;
+padding:16px;
+border-radius:18px;
+display:none;
+flex-direction:column;
+gap:12px;
+z-index:6000;
+}
+
+#menu a{
+color:#9fb7ff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* STICKY */
+#sticky-banner{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#0a0d1c;
+padding:10px 0;
+display:none;
+justify-content:center;
+z-index:5000;
+border-top:1px solid #1c2348;
+}
+
 @media(max-width:768px){
-article{padding:30px}
-header{padding:70px 16px 90px}
+article{padding:34px}
+header{padding:72px 16px 96px}
 }
 </style>
 </head>
 
 <body>
-<div class="notice">⚠️ Adult-oriented references. 18+ only. Access may be restricted by region or device.</div>
+
+<div class="notice">
+Adults Only (18+) • Premium Subscription Platform • Privacy-First Digital Infrastructure
+</div>
 
 <header>
-  <h1>PRIVATE ADULT ACCESS
-    <span>Restricted • Mature • Exclusive Platforms</span>
-  </h1>
-  <a class="cta-btn" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify & Continue</a>
+<h1>PRIVATE DIGITAL PLATFORM
+<span>Secure • Subscription-Based • Discreet Access</span>
+</h1>
+<a class="cta-btn" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
+Continue Securely
+</a>
 </header>
 
 <nav>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Private</a>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Access</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Privacy</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
 </nav>
 
 <main>
 <article>
-  <h2>Exclusive Adult Content — Limited Public Preview</h2>
-  <p>This page references private adult-oriented platforms for mature audiences. Public previews are intentionally limited. Full access may require verification through partner networks.</p>
 
-  <!-- HERO (WANITA SAJA – LOKAL) -->
-  <img class="hero-img" src="assets/img/hero-1.jpg" alt="Adult woman preview">
-  <img class="hero-img blur" src="assets/img/hero-2.jpg" alt="Blurred adult woman">
+<h2>Subscription-Based Digital Access Architecture</h2>
 
-  <div class="ad-center">
-    <script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
-    <div id="container-74186efed8398e15725fe261ed355732"></div>
-  </div>
+<p>
+This platform operates using a controlled subscription delivery model designed for mature audiences.
+Access is governed by privacy-first systems, secure verification layers, and modern digital infrastructure
+similar to enterprise-level subscription services.
+</p>
 
-  <h3>Why Access Is Restricted</h3>
-  <ul>
-    <li>Strict 18+ age verification</li>
-    <li>High demand for exclusive mature platforms</li>
-    <li>Private monetization networks</li>
-    <li>Region-based compliance</li>
-  </ul>
+<img class="hero-img" src="assets/img/hero-1.jpg" alt="Premium digital lifestyle preview">
+<img class="hero-img blur" src="assets/img/hero-2.jpg" alt="Restricted preview">
 
-  <!-- GALLERY (WANITA SAJA – LOKAL) -->
-  <div class="gallery">
-    <img src="assets/img/gal-1.jpg" alt="Sexy adult woman">
-    <img src="assets/img/gal-2.jpg" alt="Adult woman lingerie">
-    <img src="assets/img/gal-3.jpg" alt="Sensual female model">
-    <img src="assets/img/gal-4.jpg" alt="Exclusive mature woman">
-  </div>
+<div class="ad-center">
+<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
+<div id="container-74186efed8398e15725fe261ed355732"></div>
+</div>
 
-  <div class="cta">
-    <h3>Restricted Platform Detected</h3>
-    <p>Verification is required to continue.</p>
-    <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Continue</a>
-  </div>
+<h3>Why Access Is Controlled</h3>
+<ul>
+<li>Subscription-based premium content delivery</li>
+<li>Secure access management & verification</li>
+<li>Privacy-focused system architecture</li>
+<li>Compliance with regional & age-based regulations</li>
+</ul>
+
+<div class="gallery">
+<img src="assets/img/gal-1.jpg" alt="Premium private content">
+<img src="assets/img/gal-2.jpg" alt="Exclusive digital access">
+<img src="assets/img/gal-3.jpg" alt="Mature subscription preview">
+<img src="assets/img/gal-4.jpg" alt="Discreet premium platform">
+</div>
+
+<h3>Privacy-First Digital Experience</h3>
+
+<p>
+Modern premium platforms rely on encrypted delivery pipelines, anonymous access layers,
+and subscription management systems widely used across SaaS, cloud services, and private
+digital networks.
+</p>
+
+<p>
+This architecture allows users to access exclusive digital experiences without exposing
+personal identity, ensuring a controlled, secure, and high-trust environment.
+</p>
+
+<div class="cta">
+<h3>Secure Verification Required</h3>
+<p>Access continuation requires validation through our partner network.</p>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
+Proceed to Verification
+</a>
+</div>
+
 </article>
 </main>
 
-<footer style="text-align:center;padding:32px;color:#aaa">© 2025 Private Adult Access — 18+</footer>
+<footer style="text-align:center;padding:36px;color:#9aa3d6">
+© 2025 Private Subscription Platform • All Rights Reserved
+</footer>
 
-<!-- FLOATING MENU -->
 <div id="hamburger" onclick="toggleMenu()">☰</div>
 <div id="menu">
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
 </div>
 
-<!-- STICKY BANNER -->
 <div id="sticky-banner">
-  <script>
-    atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
-  </script>
-  <script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
+<script>
+atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
+</script>
+<script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
 </div>
 
-<!-- SOCIAL BAR -->
 <script src="https://ceaslessivorygoats.com/e2/a0/c0/e2a0c0614fa94d758c1c7bcddf5a2baa.js"></script>
 
 <script>
-function toggleMenu(){const m=document.getElementById('menu');m.style.display=(m.style.display==='flex')?'none':'flex';}
-setTimeout(()=>{document.getElementById('sticky-banner').style.display='flex';},4500);
+function toggleMenu(){
+const m=document.getElementById('menu');
+m.style.display=(m.style.display==='flex')?'none':'flex';
+}
+setTimeout(()=>{
+document.getElementById('sticky-banner').style.display='flex';
+},4500);
 </script>
+
 </body>
-</html>
+  </html>
