@@ -3,109 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Access Platform | Restricted Digital Area</title>
-<meta name="description" content="Private access platform for verified adult users. Restricted digital area with privacy-first architecture and controlled access.">
+
+<title>Private Digital Access | Secure Subscription</title>
+<meta name="description" content="Secure private digital access for verified adult users. Subscription-based infrastructure with privacy-first delivery.">
 <meta name="robots" content="index,follow">
-<meta name="referrer" content="no-referrer-when-downgrade">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,Arial;background:#080b18;color:#e8ebff;line-height:1.9}
+body{
+  font-family:Poppins,Arial;
+  background:#080b18;
+  color:#eaeaff;
+  line-height:1.8;
+}
 
-/* TOP NOTICE */
+/* NOTICE */
 .notice{
-  background:linear-gradient(90deg,#12194a,#1c2c7a);
-  color:#cfd6ff;text-align:center;padding:12px;font-size:13px;letter-spacing:.4px
+  background:#0f1438;
+  color:#b8c6ff;
+  text-align:center;
+  padding:12px;
+  font-size:13px;
 }
 
 /* HEADER */
 header{
   background:radial-gradient(circle at top,#2a3cff,#0b1030 70%);
-  padding:110px 18px 130px;text-align:center
+  padding:110px 18px 130px;
+  text-align:center;
 }
-header h1{font-size:clamp(32px,6vw,66px);font-weight:800;letter-spacing:1.4px}
-header h1 span{display:block;margin-top:16px;font-size:clamp(14px,2.5vw,18px);font-weight:400;opacity:.9}
-header .cta{display:inline-block;margin-top:46px;padding:18px 64px;background:#fff;color:#243bff;font-weight:800;border-radius:90px;text-decoration:none}
+header h1{
+  font-size:clamp(30px,6vw,64px);
+  font-weight:800;
+}
+header span{
+  display:block;
+  margin-top:14px;
+  font-size:16px;
+  opacity:.9;
+}
+header .cta{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:42px;
+  padding:18px 64px;
+  background:#fff;
+  color:#243bff;
+  font-weight:800;
+  border-radius:999px;
+  text-decoration:none;
+}
 
 /* TRUST */
-.trust{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:30px;font-size:13px;color:#b8c6ff}
-
-/* NAV */
-nav{
-  position:sticky;top:0;z-index:3000;background:#080b18;border-bottom:1px solid #1a2255;
-  display:flex;justify-content:center;gap:34px;padding:14px
+.trust{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
+  margin-top:26px;
+  font-size:13px;
+  color:#b8c6ff;
 }
-nav a{color:#9fb7ff;text-decoration:none;font-weight:600}
 
 /* MAIN */
-main{max-width:1250px;margin:auto;padding:56px 18px}
-article{background:#0e1438;padding:64px;border-radius:36px}
+main{
+  max-width:1200px;
+  margin:auto;
+  padding:56px 18px;
+}
+article{
+  background:#0e1438;
+  padding:60px;
+  border-radius:36px;
+}
 
 /* TEXT */
-h2{color:#9fb7ff;font-size:clamp(24px,4vw,40px)}
-h3{margin-top:48px;color:#dbe4ff}
-p{margin:22px 0;color:#d9defc}
-ul{margin-left:22px}
-li{margin:14px 0}
+h2{color:#9fb7ff;font-size:34px}
+h3{margin-top:42px;color:#dbe4ff}
+p{margin:20px 0;color:#d8dcff}
 
 /* IMAGES */
-.hero{width:100%;border-radius:28px;margin:44px 0;filter:contrast(1.1) saturate(1.15)}
-.blur{filter:blur(7px) brightness(.9) saturate(1.1)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:48px 0}
-.gallery img{width:100%;border-radius:20px;filter:contrast(1.08) saturate(1.12)}
+.hero{
+  width:100%;
+  border-radius:28px;
+  margin:44px 0;
+  filter:contrast(1.1) saturate(1.15);
+}
+.blur{filter:blur(7px) brightness(.9)}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin:48px 0;
+}
+.gallery img{
+  width:100%;
+  border-radius:20px;
+}
 
 /* ADS */
-.ad{display:flex;justify-content:center;margin:56px 0}
-.ad-300{display:flex;justify-content:center;margin:40px 0}
+.ad{
+  display:flex;
+  justify-content:center;
+  margin:56px 0;
+}
 
 /* CTA BLOCK */
 .cta-block{
   background:linear-gradient(135deg,#1f2cff,#3f6cff);
-  padding:54px;border-radius:40px;margin:76px 0;text-align:center
+  padding:54px;
+  border-radius:40px;
+  margin:76px 0;
+  text-align:center;
 }
 .cta-block a{
-  display:inline-block;margin-top:24px;padding:18px 64px;background:#fff;color:#243bff;
-  font-weight:800;border-radius:90px;text-decoration:none
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:22px;
+  padding:18px 64px;
+  background:#fff;
+  color:#243bff;
+  font-weight:800;
+  border-radius:999px;
+  text-decoration:none;
 }
 
 /* FLOAT */
 #hamburger{
-  position:fixed;left:18px;bottom:26px;width:58px;height:58px;background:#243bff;color:#fff;
-  border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;
-  cursor:pointer;z-index:6000;box-shadow:0 0 30px rgba(63,108,255,.7)
+  position:fixed;
+  left:18px;
+  bottom:26px;
+  width:58px;
+  height:58px;
+  background:#243bff;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  z-index:6000;
 }
 #menu{
-  position:fixed;left:18px;bottom:100px;background:#0e1438;padding:16px;border-radius:20px;
-  display:none;flex-direction:column;gap:12px;z-index:6000
+  position:fixed;
+  left:18px;
+  bottom:100px;
+  background:#0e1438;
+  padding:16px;
+  border-radius:20px;
+  display:none;
+  flex-direction:column;
+  gap:12px;
 }
-#menu a{color:#9fb7ff;text-decoration:none;font-weight:600}
+#menu a{
+  color:#9fb7ff;
+  text-decoration:none;
+  font-weight:600;
+}
 
 /* STICKY */
 #sticky{
-  position:fixed;bottom:0;left:0;width:100%;background:#080b18;padding:10px 0;
-  display:none;justify-content:center;z-index:5000;border-top:1px solid #1a2255
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#080b18;
+  padding:10px 0;
+  display:none;
+  justify-content:center;
+  border-top:1px solid #1a2255;
+  z-index:5000;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  article{padding:36px}
-  header{padding:86px 16px 110px}
-}
+/* MOBILE FIX */
 @media(max-width:480px){
-  .cta,.cta-block a{width:100%;max-width:320px}
+  article{padding:34px}
+  header .cta,
+  .cta-block a{
+    width:100%;
+    max-width:320px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:16px 18px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="notice">Adults Only (18+) • Private Access Platform • Restricted Area</div>
+<div class="notice">
+Adults Only (18+) • Private Subscription Infrastructure
+</div>
 
 <header>
-  <h1>Private Access Platform
-    <span>Restricted digital area for verified adult users</span>
+  <h1>Private Digital Access
+    <span>Secure subscription-based content delivery</span>
   </h1>
 
   <a class="cta" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
@@ -115,107 +214,82 @@ li{margin:14px 0}
   <div class="trust">
     <div>🔒 Encrypted Sessions</div>
     <div>⚙️ Access Control</div>
-    <div>🌍 Global Delivery</div>
+    <div>🌍 Global Traffic</div>
     <div>✅ Compliance Ready</div>
   </div>
 </header>
 
-<nav>
-  <a href="#">Access</a>
-  <a href="#">Privacy</a>
-  <a href="#">Verification</a>
-</nav>
-
 <main>
 <article>
 
-<!-- ABOVE-THE-FOLD 300x250 -->
-<div class="ad-300">
+<h2>Private Subscription Platform</h2>
+<p>
+This page provides a limited public preview of a private subscription-based digital platform.
+Access is restricted to maintain privacy, quality control, and advertiser compliance.
+</p>
+
+<img class="hero" src="assets/img/hero-1.jpg">
+<img class="hero blur" src="assets/img/hero-2.jpg">
+
+<!-- 🔥 BANNER 300x250 -->
+<div class="ad">
 <script>
-  atOptions = {
-    'key' : '125fdbe57fafa4cf459c771f0ca97afa',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
+atOptions={
+  'key':'125fdbe57fafa4cf459c771f0ca97afa',
+  'format':'iframe',
+  'height':250,
+  'width':300,
+  'params':{}
+};
 </script>
 <script src="https://ceaslessivorygoats.com/125fdbe57fafa4cf459c771f0ca97afa/invoke.js"></script>
 </div>
 
-<h2>Restricted Private Digital Access</h2>
-<p>
-This private platform operates under a controlled-access model. Public visibility is limited to
-ensure privacy, compliance, and system integrity for adult users.
-</p>
-
-<img class="hero" src="assets/img/hero-1.jpg" alt="">
-<img class="hero blur" src="assets/img/hero-2.jpg" alt="">
-
-<!-- NATIVE / MID CONTENT -->
-<div class="ad">
-<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
-<div id="container-74186efed8398e15725fe261ed355732"></div>
-</div>
-
 <h3>Why Access Is Restricted</h3>
-<ul>
-<li>Private verification layers</li>
-<li>Controlled digital delivery</li>
-<li>Privacy-first session handling</li>
-<li>Age & regional compliance</li>
-</ul>
-
-<h3>Private Infrastructure & Privacy</h3>
 <p>
-Modern private platforms rely on encrypted pipelines, anonymized sessions, and controlled access
-to maintain quality and trust.
+Subscription infrastructure ensures premium delivery, protects user privacy,
+and supports high-value advertising demand across global regions.
 </p>
 
 <div class="gallery">
-<img src="assets/img/gal-1.jpg" alt="">
-<img src="assets/img/gal-2.jpg" alt="">
-<img src="assets/img/gal-3.jpg" alt="">
-<img src="assets/img/gal-4.jpg" alt="">
-</div>
-
-<!-- SECOND NATIVE -->
-<div class="ad">
-<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
+  <img src="assets/img/gal-1.jpg">
+  <img src="assets/img/gal-2.jpg">
+  <img src="assets/img/gal-3.jpg">
 </div>
 
 <div class="cta-block">
   <h3>Verification Required</h3>
   <p>Restricted access detected. Continue via secure partner validation.</p>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Proceed</a>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
+    Proceed
+  </a>
 </div>
 
 </article>
 </main>
 
 <footer style="text-align:center;padding:40px;color:#9aa3d6">
-© 2025 Private Access Platform • All Rights Reserved
+© 2025 Private Digital Platform
 </footer>
 
 <div id="hamburger" onclick="toggle()">☰</div>
 <div id="menu">
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
+  <a href="#">WhatsApp</a>
+  <a href="#">Private Access</a>
 </div>
 
-<!-- STICKY LATE LOAD -->
+<!-- STICKY -->
 <div id="sticky">
-<script>
-atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
-</script>
-<script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
+<script src="https://ceaslessivorygoats.com/ec/9e/9a/ec9e9a7a36624504f271f1034de8f422.js"></script>
 </div>
 
-<script src="https://ceaslessivorygoats.com/e2/a0/c0/e2a0c0614fa94d758c1c7bcddf5a2baa.js"></script>
 <script>
-function toggle(){const m=document.getElementById('menu');m.style.display=(m.style.display==='flex')?'none':'flex'}
-setTimeout(()=>{document.getElementById('sticky').style.display='flex'},4500);
+function toggle(){
+  const m=document.getElementById('menu');
+  m.style.display=(m.style.display==='flex')?'none':'flex';
+}
+setTimeout(()=>{document.getElementById('sticky').style.display='flex'},4000);
 </script>
 
 </body>
-  </html>
+</html>
