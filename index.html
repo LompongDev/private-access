@@ -4,57 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Private Digital Access | Secure Subscription</title>
-<meta name="description" content="Secure private digital access for verified adult users. Subscription-based infrastructure with privacy-first delivery.">
+<title>Private Access Platform | Restricted Digital Area</title>
+<meta name="description" content="Private access platform for verified adult users. Restricted digital area with privacy-first architecture and controlled access.">
 <meta name="robots" content="index,follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:Poppins,Arial;
-  background:#080b18;
-  color:#eaeaff;
-  line-height:1.8;
-}
+body{font-family:Poppins,Arial;background:#080b18;color:#e8ebff;line-height:1.9}
 
 /* NOTICE */
 .notice{
-  background:#0f1438;
-  color:#b8c6ff;
-  text-align:center;
-  padding:12px;
-  font-size:13px;
+  background:linear-gradient(90deg,#12194a,#1c2c7a);
+  color:#cfd6ff;text-align:center;padding:12px;font-size:13px
 }
 
 /* HEADER */
 header{
   background:radial-gradient(circle at top,#2a3cff,#0b1030 70%);
-  padding:110px 18px 130px;
-  text-align:center;
+  padding:100px 16px 120px;
+  text-align:center
 }
 header h1{
   font-size:clamp(30px,6vw,64px);
-  font-weight:800;
+  font-weight:800
 }
-header span{
+header h1 span{
   display:block;
   margin-top:14px;
   font-size:16px;
-  opacity:.9;
+  opacity:.9
 }
 header .cta{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  margin-top:42px;
-  padding:18px 64px;
+  display:inline-block;
+  margin-top:36px;
+  padding:18px 60px;
   background:#fff;
   color:#243bff;
   font-weight:800;
-  border-radius:999px;
-  text-decoration:none;
+  border-radius:90px;
+  text-decoration:none
 }
 
 /* TRUST */
@@ -65,73 +56,78 @@ header .cta{
   gap:18px;
   margin-top:26px;
   font-size:13px;
-  color:#b8c6ff;
+  color:#b8c6ff
 }
 
-/* MAIN */
-main{
-  max-width:1200px;
-  margin:auto;
-  padding:56px 18px;
+/* NAV */
+nav{
+  position:sticky;
+  top:0;
+  z-index:3000;
+  background:#080b18;
+  border-bottom:1px solid #1a2255;
+  display:flex;
+  justify-content:center;
+  gap:32px;
+  padding:14px
 }
+nav a{color:#9fb7ff;text-decoration:none;font-weight:600}
+
+/* MAIN */
+main{max-width:1200px;margin:auto;padding:50px 16px}
 article{
   background:#0e1438;
   padding:60px;
-  border-radius:36px;
+  border-radius:34px
 }
 
 /* TEXT */
-h2{color:#9fb7ff;font-size:34px}
-h3{margin-top:42px;color:#dbe4ff}
-p{margin:20px 0;color:#d8dcff}
+h2{color:#9fb7ff;font-size:clamp(22px,4vw,38px)}
+h3{margin-top:44px;color:#dbe4ff}
+p{margin:20px 0;color:#d9defc}
+ul{margin-left:22px}
+li{margin:14px 0}
 
 /* IMAGES */
 .hero{
   width:100%;
-  border-radius:28px;
-  margin:44px 0;
-  filter:contrast(1.1) saturate(1.15);
+  border-radius:26px;
+  margin:40px 0;
+  filter:contrast(1.1) saturate(1.15)
 }
 .blur{filter:blur(7px) brightness(.9)}
-
-/* GALLERY */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  margin:48px 0;
+  gap:18px;
+  margin:46px 0
 }
 .gallery img{
   width:100%;
-  border-radius:20px;
+  border-radius:18px
 }
 
 /* ADS */
-.ad{
-  display:flex;
-  justify-content:center;
-  margin:56px 0;
-}
+.ad{display:flex;justify-content:center;margin:50px 0}
+.ad-300{display:flex;justify-content:center;margin:36px 0}
 
 /* CTA BLOCK */
 .cta-block{
   background:linear-gradient(135deg,#1f2cff,#3f6cff);
-  padding:54px;
-  border-radius:40px;
-  margin:76px 0;
-  text-align:center;
+  padding:50px;
+  border-radius:36px;
+  margin:70px 0;
+  text-align:center
 }
 .cta-block a{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
+  display:inline-block;
   margin-top:22px;
-  padding:18px 64px;
+  padding:18px 60px;
   background:#fff;
   color:#243bff;
   font-weight:800;
-  border-radius:999px;
-  text-decoration:none;
+  border-radius:90px;
+  text-decoration:none
 }
 
 /* FLOAT */
@@ -139,8 +135,8 @@ p{margin:20px 0;color:#d8dcff}
   position:fixed;
   left:18px;
   bottom:26px;
-  width:58px;
-  height:58px;
+  width:56px;
+  height:56px;
   background:#243bff;
   color:#fff;
   border-radius:50%;
@@ -148,24 +144,22 @@ p{margin:20px 0;color:#d8dcff}
   align-items:center;
   justify-content:center;
   font-size:26px;
-  z-index:6000;
+  cursor:pointer;
+  z-index:6000
 }
 #menu{
   position:fixed;
   left:18px;
-  bottom:100px;
+  bottom:96px;
   background:#0e1438;
   padding:16px;
-  border-radius:20px;
+  border-radius:18px;
   display:none;
   flex-direction:column;
   gap:12px;
+  z-index:6000
 }
-#menu a{
-  color:#9fb7ff;
-  text-decoration:none;
-  font-weight:600;
-}
+#menu a{color:#9fb7ff;text-decoration:none;font-weight:600}
 
 /* STICKY */
 #sticky{
@@ -177,20 +171,25 @@ p{margin:20px 0;color:#d8dcff}
   padding:10px 0;
   display:none;
   justify-content:center;
-  border-top:1px solid #1a2255;
   z-index:5000;
+  border-top:1px solid #1a2255
 }
 
-/* MOBILE FIX */
-@media(max-width:480px){
+/* MOBILE FIX TOTAL */
+@media(max-width:768px){
   article{padding:34px}
+  header{padding:80px 14px 100px}
+}
+@media(max-width:480px){
   header .cta,
   .cta-block a{
+    display:block;
     width:100%;
-    max-width:320px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:16px 18px;
+    max-width:300px;
+    margin:22px auto 0;
+    padding:16px 20px;
+    font-size:15px;
+    text-align:center
   }
 }
 </style>
@@ -198,13 +197,11 @@ p{margin:20px 0;color:#d8dcff}
 
 <body>
 
-<div class="notice">
-Adults Only (18+) • Private Subscription Infrastructure
-</div>
+<div class="notice">Adults Only (18+) • Private Access Platform • Restricted Area</div>
 
 <header>
-  <h1>Private Digital Access
-    <span>Secure subscription-based content delivery</span>
+  <h1>Private Access Platform
+    <span>Restricted digital area for verified adult users</span>
   </h1>
 
   <a class="cta" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
@@ -214,82 +211,95 @@ Adults Only (18+) • Private Subscription Infrastructure
   <div class="trust">
     <div>🔒 Encrypted Sessions</div>
     <div>⚙️ Access Control</div>
-    <div>🌍 Global Traffic</div>
+    <div>🌍 Global Delivery</div>
     <div>✅ Compliance Ready</div>
   </div>
 </header>
 
+<nav>
+  <a href="#">Access</a>
+  <a href="#">Privacy</a>
+  <a href="#">Verification</a>
+</nav>
+
 <main>
 <article>
 
-<h2>Private Subscription Platform</h2>
+<!-- 300x250 ABOVE THE FOLD -->
+<div class="ad-300">
+<script>
+atOptions={'key':'125fdbe57fafa4cf459c771f0ca97afa','format':'iframe','height':250,'width':300,'params':{}};
+</script>
+<script src="https://ceaslessivorygoats.com/125fdbe57fafa4cf459c771f0ca97afa/invoke.js"></script>
+</div>
+
+<h2>Restricted Private Digital Access</h2>
 <p>
-This page provides a limited public preview of a private subscription-based digital platform.
-Access is restricted to maintain privacy, quality control, and advertiser compliance.
+This private platform operates under a controlled-access model designed for privacy,
+compliance, and secure digital delivery.
 </p>
 
 <img class="hero" src="assets/img/hero-1.jpg">
 <img class="hero blur" src="assets/img/hero-2.jpg">
 
-<!-- 🔥 BANNER 300x250 -->
 <div class="ad">
-<script>
-atOptions={
-  'key':'125fdbe57fafa4cf459c771f0ca97afa',
-  'format':'iframe',
-  'height':250,
-  'width':300,
-  'params':{}
-};
-</script>
-<script src="https://ceaslessivorygoats.com/125fdbe57fafa4cf459c771f0ca97afa/invoke.js"></script>
+<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
+<div id="container-74186efed8398e15725fe261ed355732"></div>
 </div>
 
 <h3>Why Access Is Restricted</h3>
-<p>
-Subscription infrastructure ensures premium delivery, protects user privacy,
-and supports high-value advertising demand across global regions.
-</p>
+<ul>
+<li>Private verification layers</li>
+<li>Controlled delivery infrastructure</li>
+<li>Privacy-first session handling</li>
+<li>Age & regional compliance</li>
+</ul>
 
 <div class="gallery">
-  <img src="assets/img/gal-1.jpg">
-  <img src="assets/img/gal-2.jpg">
-  <img src="assets/img/gal-3.jpg">
+<img src="assets/img/gal-1.jpg">
+<img src="assets/img/gal-2.jpg">
+<img src="assets/img/gal-3.jpg">
+<img src="assets/img/gal-4.jpg">
+</div>
+
+<div class="ad">
+<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
 </div>
 
 <div class="cta-block">
   <h3>Verification Required</h3>
-  <p>Restricted access detected. Continue via secure partner validation.</p>
-  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-    Proceed
-  </a>
+  <p>Restricted access detected. Continue via secure validation.</p>
+  <a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Proceed</a>
 </div>
 
 </article>
 </main>
 
-<footer style="text-align:center;padding:40px;color:#9aa3d6">
-© 2025 Private Digital Platform
+<footer style="text-align:center;padding:36px;color:#9aa3d6">
+© 2025 Private Access Platform
 </footer>
 
 <div id="hamburger" onclick="toggle()">☰</div>
 <div id="menu">
-  <a href="#">WhatsApp</a>
-  <a href="#">Private Access</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
 </div>
 
-<!-- STICKY -->
 <div id="sticky">
-<script src="https://ceaslessivorygoats.com/ec/9e/9a/ec9e9a7a36624504f271f1034de8f422.js"></script>
+<script>
+atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':90,'width':728,'params':{}};
+</script>
+<script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
 </div>
 
+<script src="https://ceaslessivorygoats.com/e2/a0/c0/e2a0c0614fa94d758c1c7bcddf5a2baa.js"></script>
 <script>
 function toggle(){
   const m=document.getElementById('menu');
-  m.style.display=(m.style.display==='flex')?'none':'flex';
+  m.style.display=(m.style.display==='flex')?'none':'flex'
 }
-setTimeout(()=>{document.getElementById('sticky').style.display='flex'},4000);
+setTimeout(()=>{document.getElementById('sticky').style.display='flex'},4500);
 </script>
 
 </body>
-</html>
+      </html>
