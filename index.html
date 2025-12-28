@@ -3,363 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Private Subscription Infrastructure | Secure Digital Access</title>
-
-<meta name="description" content="A premium subscription-based digital access platform for mature audiences. Built with privacy-first architecture, secure access management, and controlled digital delivery systems.">
-
-<meta name="robots" content="index,follow">
-<meta name="referrer" content="no-referrer-when-downgrade">
-
+<meta name="description" content="Premium subscription-based digital access platform for mature audiences. Privacy-first infrastructure with controlled access and secure delivery.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Poppins,Arial;
-background:#0a0d1c;
-color:#eaeaea;
-line-height:1.9;
-}
-
-.notice{
-background:#0f1433;
-color:#b8c6ff;
-text-align:center;
-padding:12px;
-font-size:13px;
-letter-spacing:.3px;
-}
-
-/* HEADER */
-header{
-background:linear-gradient(135deg,#2b2f77,#3f6cff);
-padding:96px 18px 120px;
-text-align:center;
-}
-
-header h1{
-font-size:clamp(30px,6vw,64px);
-font-weight:800;
-letter-spacing:1.4px;
-}
-
-header h1 span{
-display:block;
-font-size:clamp(14px,2.4vw,18px);
-font-weight:400;
-margin-top:14px;
-opacity:.9;
-}
-
-header .cta-btn{
-display:inline-block;
-margin-top:44px;
-padding:18px 60px;
-background:#fff;
-color:#2b4cff;
-font-weight:800;
-border-radius:90px;
-text-decoration:none;
-}
-
-/* AUTHORITY STRIP */
-.trust-strip{
-display:flex;
-flex-wrap:wrap;
-gap:18px;
-justify-content:center;
-margin:26px auto 0;
-font-size:13px;
-color:#b8c6ff;
-max-width:1100px;
-}
-
-/* NAV */
-nav{
-position:sticky;
-top:0;
-z-index:3000;
-background:#0a0d1c;
-display:flex;
-justify-content:center;
-gap:32px;
-padding:14px;
-border-bottom:1px solid #1c2348;
-}
-
-nav a{
-color:#9fb7ff;
-text-decoration:none;
-font-weight:600;
-}
-
-/* MAIN */
-main{
-max-width:1200px;
-margin:auto;
-padding:44px 16px;
-}
-
-article{
-background:#0f1533;
-padding:60px;
-border-radius:32px;
-}
-
-h2{
-color:#9fb7ff;
-font-size:clamp(24px,4vw,38px);
-}
-
-h3{
-margin-top:44px;
-color:#dbe4ff;
-}
-
-p{
-margin:20px 0;
-color:#d8dcff;
-}
-
-ul{
-margin-left:22px;
-}
-
-li{
-margin:14px 0;
-}
-
-/* IMAGES */
-.hero-img{
-width:100%;
-border-radius:26px;
-margin:40px 0;
-filter:contrast(1.08) saturate(1.12);
-}
-
-.blur{
-filter:blur(7px) brightness(.9) saturate(1.1);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px;
-margin:44px 0;
-}
-
-.gallery img{
-width:100%;
-border-radius:18px;
-filter:contrast(1.08) saturate(1.12);
-}
-
-/* ADS */
-.ad-center{
-display:flex;
-justify-content:center;
-margin:56px 0;
-}
-
-/* CTA */
-.cta{
-background:linear-gradient(135deg,#2b2f77,#3f6cff);
-padding:48px;
-margin:70px 0;
-border-radius:34px;
-text-align:center;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.cta a{
-margin-top:24px;
-padding:18px 58px;
-background:#fff;
-color:#2b4cff;
-font-weight:800;
-border-radius:90px;
-text-decoration:none;
-text-align:center;
-}
-
-/* FLOAT */
-#hamburger{
-position:fixed;
-left:18px;
-bottom:26px;
-width:58px;
-height:58px;
-background:#2b2f77;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:26px;
-cursor:pointer;
-z-index:6000;
-box-shadow:0 0 30px rgba(63,108,255,.6);
-}
-
-#menu{
-position:fixed;
-left:18px;
-bottom:100px;
-background:#0f1533;
-padding:16px;
-border-radius:18px;
-display:none;
-flex-direction:column;
-gap:12px;
-z-index:6000;
-}
-
-#menu a{
-color:#9fb7ff;
-text-decoration:none;
-font-weight:600;
-}
-
-/* STICKY */
-#sticky-banner{
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#0a0d1c;
-padding:10px 0;
-display:none;
-justify-content:center;
-z-index:5000;
-border-top:1px solid #1c2348;
-}
-
-@media(max-width:480px){
-.cta a{width:100%;max-width:320px}
-}
-
-@media(max-width:768px){
-article{padding:34px}
-header{padding:72px 16px 96px}
-}
+body{font-family:Poppins,Arial;background:#0a0d1c;color:#eaeaea;line-height:1.9}
+.notice{background:#0f1433;color:#b8c6ff;text-align:center;padding:12px;font-size:13px}
+header{background:linear-gradient(135deg,#2b2f77,#3f6cff);padding:96px 18px 120px;text-align:center}
+header h1{font-size:clamp(30px,6vw,64px);font-weight:800}
+header h1 span{display:block;font-size:18px;font-weight:400;margin-top:14px;opacity:.9}
+header a{display:inline-block;margin-top:44px;padding:18px 60px;background:#fff;color:#2b4cff;font-weight:800;border-radius:90px;text-decoration:none}
+.trust-strip{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-top:26px;font-size:13px;color:#b8c6ff}
+main{max-width:1200px;margin:auto;padding:44px 16px}
+article{background:#0f1533;padding:60px;border-radius:32px}
+h2{color:#9fb7ff;font-size:36px}
+h3{margin-top:44px;color:#dbe4ff}
+p{margin:20px 0;color:#d8dcff}
+.hero-img{width:100%;border-radius:26px;margin:40px 0;filter:contrast(1.08) saturate(1.12)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:44px 0}
+.gallery img{width:100%;border-radius:18px}
+.ad-center{display:flex;justify-content:center;margin:56px 0}
+.cta{background:linear-gradient(135deg,#2b2f77,#3f6cff);padding:48px;margin:70px 0;border-radius:34px;text-align:center}
+.cta a{margin-top:24px;padding:18px 58px;background:#fff;color:#2b4cff;font-weight:800;border-radius:90px;text-decoration:none}
+#sticky-banner{position:fixed;bottom:0;left:0;width:100%;background:#0a0d1c;padding:10px 0;display:none;justify-content:center;z-index:5000}
 </style>
 </head>
 
 <body>
 
-<div class="notice">
-Adults Only (18+) • Premium Subscription Platform • Privacy-First Digital Infrastructure
-</div>
+<div class="notice">Adults Only (18+) • Premium Subscription Platform • Privacy-First Infrastructure</div>
 
 <header>
 <h1>Private Subscription Infrastructure
 <span>Secure digital access for mature audiences</span>
 </h1>
-
-<a class="cta-btn" href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Continue Securely
-</a>
-
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Continue Securely</a>
 <div class="trust-strip">
-<div>🔒 Privacy-First Architecture</div>
-<div>⚙️ Subscription Access Control</div>
-<div>🌍 Global Digital Delivery</div>
-<div>✅ Age-Restricted Compliance</div>
+<div>🔒 Privacy-First</div>
+<div>⚙️ Subscription Control</div>
+<div>🌍 Global Delivery</div>
+<div>✅ Compliance</div>
 </div>
 </header>
-
-<nav>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Access</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Privacy</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
-</nav>
 
 <main>
 <article>
 
-<h2>Subscription-Based Digital Access Architecture</h2>
+<h2>Subscription-Based Digital Access</h2>
+<p>This platform uses controlled subscription infrastructure similar to premium creator and private media services.</p>
 
-<p>
-This platform operates using a controlled subscription infrastructure comparable to enterprise SaaS systems.
-Access is governed by secure verification layers, encrypted delivery pipelines, and privacy-first session handling.
-</p>
+<img class="hero-img" src="assets/img/hero-1.jpg" alt="Premium preview">
 
-<img class="hero-img" src="assets/img/hero-1.jpg" alt="Premium digital lifestyle preview">
-<img class="hero-img blur" src="assets/img/hero-2.jpg" alt="Restricted content preview">
-
+<!-- ✅ SINGLE NATIVE AD (NO DUPLICATE) -->
 <div class="ad-center">
 <script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
 <div id="container-74186efed8398e15725fe261ed355732"></div>
 </div>
 
-<h3>Why Access Is Controlled</h3>
-<ul>
-<li>Subscription-based premium content delivery</li>
-<li>Secure access management and verification</li>
-<li>Privacy-oriented system architecture</li>
-<li>Compliance with regional and age-based regulations</li>
-</ul>
-
-<h3>Private Digital Infrastructure & Access Management</h3>
-<p>
-Modern private platforms rely on subscription technology widely adopted across cloud services,
-digital media subscriptions, and secure content networks. These systems prioritize controlled access,
-user privacy, and service reliability.
-</p>
-
-<p>
-Access management layers regulate authentication, session integrity, and regional compliance,
-ensuring users receive secure and discreet digital experiences without unnecessary exposure
-of personal information.
-</p>
-
-<h3>Subscription Technology, Compliance & Privacy</h3>
-<p>
-Subscription technology allows platforms to scale efficiently while maintaining performance
-and compliance standards. Verification layers combined with anonymized session handling
-create trusted environments for mature audiences.
-</p>
-
-<p>
-Privacy-first digital infrastructure is now a baseline expectation across high-value
-subscription services worldwide, including SaaS, cloud delivery, and premium digital platforms.
-</p>
+<h3>Why Access Is Restricted</h3>
+<p>Access is controlled to ensure privacy, quality, and compliance across regions.</p>
 
 <div class="gallery">
-<img src="assets/img/gal-1.jpg" alt="Premium private content">
-<img src="assets/img/gal-2.jpg" alt="Exclusive digital access">
-<img src="assets/img/gal-3.jpg" alt="Mature subscription preview">
-<img src="assets/img/gal-4.jpg" alt="Discreet premium platform">
-</div>
-
-<div class="ad-center">
-<script async data-cfasync="false" src="https://ceaslessivorygoats.com/74186efed8398e15725fe261ed355732/invoke.js"></script>
+<img src="assets/img/gal-1.jpg">
+<img src="assets/img/gal-2.jpg">
+<img src="assets/img/gal-3.jpg">
 </div>
 
 <div class="cta">
-<h3>Secure Verification Required</h3>
-<p>Access continuation requires validation through our partner network.</p>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">
-Proceed to Verification
-</a>
+<h3>Verification Required</h3>
+<p>Continue through secure partner verification.</p>
+<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Proceed</a>
 </div>
 
 </article>
 </main>
-
-<footer style="text-align:center;padding:36px;color:#9aa3d6">
-© 2025 Private Subscription Platform • All Rights Reserved
-</footer>
-
-<div id="hamburger" onclick="toggleMenu()">☰</div>
-<div id="menu">
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Verify</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Unlock</a>
-<a href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454">Enter</a>
-</div>
 
 <div id="sticky-banner">
 <script>
@@ -368,17 +87,9 @@ atOptions={'key':'0e7f4cceae9dd767902cb382d496cde2','format':'iframe','height':9
 <script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
 </div>
 
-<script src="https://ceaslessivorygoats.com/e2/a0/c0/e2a0c0614fa94d758c1c7bcddf5a2baa.js"></script>
-
 <script>
-function toggleMenu(){
-const m=document.getElementById('menu');
-m.style.display=(m.style.display==='flex')?'none':'flex';
-}
-setTimeout(()=>{
-document.getElementById('sticky-banner').style.display='flex';
-},4500);
+setTimeout(()=>{document.getElementById('sticky-banner').style.display='flex'},4500);
 </script>
 
 </body>
-  </html>
+</html>
