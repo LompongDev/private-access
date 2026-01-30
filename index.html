@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp</title>
+<title>WhatsApp & Video Call</title>
 
 <meta property="og:title" content="WhatsApp Contact">
 <meta property="og:description" content="Tap to chat on WhatsApp">
@@ -97,7 +97,7 @@ body{
   margin-bottom:30px;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn{
   width:100%;
   padding:16px;
@@ -110,8 +110,36 @@ body{
   cursor:pointer;
   box-shadow:0 12px 30px rgba(0,0,0,.6);
   animation:pulse 2s infinite;
+  margin-bottom:12px;
 }
 
+.btn-video{
+  width:100%;
+  padding:16px;
+  border-radius:50px;
+  border:none;
+  background:#007bff;
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 12px 30px rgba(0,0,0,.6);
+  animation:pulse 2s infinite;
+  margin-bottom:12px;
+}
+
+/* AD BANNERS */
+.ad-300{
+  margin:20px auto;
+  text-align:center;
+}
+
+.ad-728{
+  margin:20px auto;
+  text-align:center;
+}
+
+/* PULSE ANIMATION */
 @keyframes pulse{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.04)}
@@ -151,16 +179,48 @@ body{
 
     <div class="typing" id="typing">typing…</div>
 
+    <!-- BUTTONS -->
     <button class="btn" onclick="go()">Chat on WhatsApp</button>
+    <button class="btn-video" onclick="videoCall()">Video Call</button>
 
     <div class="loading" id="loading">
-      Opening chat…
+      Opening…
     </div>
+
+    <!-- AD 300x250 -->
+    <div class="ad-300">
+      <script>
+        atOptions = {
+          'key' : '125fdbe57fafa4cf459c771f0ca97afa',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script src="https://ceaslessivorygoats.com/125fdbe57fafa4cf459c771f0ca97afa/invoke.js"></script>
+    </div>
+
+    <!-- AD 728x90 -->
+    <div class="ad-728">
+      <script>
+        atOptions = {
+          'key' : '0e7f4cceae9dd767902cb382d496cde2',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
+    </div>
+
   </div>
 
 </div>
 
 <script>
+// Typing animation
 const typing = document.getElementById('typing');
 let dots = 0;
 setInterval(()=>{
@@ -168,10 +228,21 @@ setInterval(()=>{
   typing.textContent = "typing" + ".".repeat(dots);
 },500);
 
+// Chat WhatsApp
 function go(){
+  document.getElementById('loading').textContent = 'Opening chat…';
   document.getElementById('loading').style.display='block';
   setTimeout(()=>{
     window.location.href="https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+  },1200);
+}
+
+// Video Call - Smartlink Adsterra
+function videoCall(){
+  document.getElementById('loading').textContent = 'Starting video call…';
+  document.getElementById('loading').style.display='block';
+  setTimeout(()=>{
+    window.location.href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454";
   },1200);
 }
 </script>
