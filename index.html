@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Secure WhatsApp Access</title>
+<title>WhatsApp</title>
 
-<!-- Open Graph -->
-<meta property="og:title" content="Secure WhatsApp Access">
-<meta property="og:description" content="Verified private WhatsApp connection">
+<meta property="og:title" content="WhatsApp Contact">
+<meta property="og:description" content="Tap to chat on WhatsApp">
 <meta property="og:image" content="https://kodean.online/assets/img/cover.jpg">
 <meta property="og:type" content="website">
 
@@ -16,107 +15,100 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
 body{
   min-height:100vh;
-  background:
-    radial-gradient(circle at 20% 20%, #1a1f4d, transparent 40%),
-    radial-gradient(circle at 80% 80%, #0f5132, transparent 40%),
-    linear-gradient(180deg,#05060f,#000);
+  background:#0b141a;
   color:#fff;
   display:flex;
-  align-items:center;
   justify-content:center;
-  overflow:hidden;
+  align-items:center;
 }
 
-/* floating glow */
-body::before{
-  content:"";
-  position:absolute;
-  inset:-50%;
-  background:conic-gradient(from 0deg,#25D366,#1f8f4d,#25D366);
-  opacity:.06;
-  animation:spin 20s linear infinite;
-}
-
-@keyframes spin{
-  to{transform:rotate(360deg)}
-}
-
-.wrapper{
-  position:relative;
-  z-index:2;
+.app{
   width:100%;
-  max-width:520px;
-  padding:40px 26px;
-  text-align:center;
-  animation:fadeIn .8s ease;
+  max-width:420px;
+  min-height:100vh;
+  background:linear-gradient(180deg,#111b21,#0b141a);
+  display:flex;
+  flex-direction:column;
 }
 
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(18px)}
-  to{opacity:1;transform:none}
+/* HEADER */
+.header{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#111b21;
 }
 
 .avatar{
-  width:130px;
-  height:130px;
+  width:44px;
+  height:44px;
   border-radius:50%;
   object-fit:cover;
-  border:4px solid #25D366;
-  box-shadow:0 0 40px rgba(37,211,102,.85);
-  margin-bottom:22px;
 }
 
-h1{
-  font-size:28px;
-  font-weight:800;
-  margin-bottom:10px;
+.name-status{
+  flex:1;
 }
 
-.subtitle{
+.name{
+  font-size:16px;
+  font-weight:600;
+}
+
+.status{
+  font-size:13px;
+  color:#25D366;
+}
+
+/* CONTENT */
+.content{
+  flex:1;
+  padding:26px 20px;
+  text-align:center;
+}
+
+.big-avatar{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:40px auto 18px;
+  box-shadow:0 0 35px rgba(37,211,102,.6);
+}
+
+.bio{
   font-size:15px;
-  opacity:.9;
   line-height:1.6;
-  margin-bottom:28px;
+  opacity:.9;
+  margin-bottom:20px;
 }
 
-.badges{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-  font-size:12px;
-  opacity:.8;
-  margin-bottom:34px;
-}
-
-.badges span{
-  padding:6px 12px;
-  border-radius:20px;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.15);
+/* TYPING */
+.typing{
+  font-size:13px;
+  color:#25D366;
+  height:18px;
+  margin-bottom:30px;
 }
 
 /* BUTTON */
 .btn{
-  position:relative;
-  display:inline-block;
   width:100%;
-  max-width:360px;
-  padding:18px;
-  font-size:18px;
-  font-weight:800;
-  color:#fff;
+  padding:16px;
+  border-radius:50px;
   border:none;
-  border-radius:60px;
-  background:linear-gradient(135deg,#25D366,#1ebe5d);
+  background:#25D366;
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
   cursor:pointer;
-  overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,.65);
+  box-shadow:0 12px 30px rgba(0,0,0,.6);
   animation:pulse 2s infinite;
 }
 
@@ -125,79 +117,62 @@ h1{
   50%{transform:scale(1.04)}
 }
 
-/* shimmer */
-.btn::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:-60%;
-  width:40%;
-  height:100%;
-  background:linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,.6),
-    transparent
-  );
-  animation:shine 2.2s infinite;
-}
-
-@keyframes shine{
-  to{left:120%}
-}
-
 .loading{
-  margin-top:18px;
-  font-size:13px;
-  opacity:.8;
+  margin-top:14px;
+  font-size:12px;
+  opacity:.7;
   display:none;
-}
-
-/* footer note */
-.note{
-  margin-top:40px;
-  font-size:11px;
-  opacity:.6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-  <img src="assets/img/cover.jpg" class="avatar" alt="WhatsApp">
+<div class="app">
 
-  <h1>Secure WhatsApp Access</h1>
-
-  <div class="subtitle">
-    You are entering a private and verified WhatsApp conversation.<br>
-    Click below to continue securely.
+  <!-- HEADER -->
+  <div class="header">
+    <img src="assets/img/cover.jpg" class="avatar">
+    <div class="name-status">
+      <div class="name">Jessica Rae</div>
+      <div class="status">online</div>
+    </div>
   </div>
 
-  <div class="badges">
-    <span>🔒 End-to-End Encrypted</span>
-    <span>✅ Verified Contact</span>
-    <span>⚡ Instant Access</span>
+  <!-- CONTENT -->
+  <div class="content">
+    <img src="assets/img/cover.jpg" class="big-avatar">
+
+    <div class="bio">
+      Hey 💕<br>
+      I'm bored right now…<br>
+      Let’s talk a little 😉
+    </div>
+
+    <div class="typing" id="typing">typing…</div>
+
+    <button class="btn" onclick="go()">Chat on WhatsApp</button>
+
+    <div class="loading" id="loading">
+      Opening chat…
+    </div>
   </div>
 
-  <button class="btn" onclick="go()">Continue to WhatsApp</button>
-
-  <div class="loading" id="loading">
-    Establishing secure connection…
-  </div>
-
-  <div class="note">
-    Please do not refresh or close this page
-  </div>
 </div>
 
 <script>
+const typing = document.getElementById('typing');
+let dots = 0;
+setInterval(()=>{
+  dots = (dots+1)%4;
+  typing.textContent = "typing" + ".".repeat(dots);
+},500);
+
 function go(){
-  document.querySelector('.btn').style.animation='none';
   document.getElementById('loading').style.display='block';
   setTimeout(()=>{
-    window.location.href="https://otieu.com/4/10526666";
-  },1600);
+    window.location.href="https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+  },1200);
 }
 </script>
 
