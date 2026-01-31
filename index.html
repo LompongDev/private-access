@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp & Video Call</title>
 
+<title>WhatsApp Contact</title>
+
+<!-- Open Graph (WhatsApp Preview) -->
 <meta property="og:title" content="WhatsApp Contact">
 <meta property="og:description" content="Tap to chat on WhatsApp">
 <meta property="og:image" content="https://kodean.online/assets/img/cover.jpg">
@@ -86,72 +88,43 @@ body{
   font-size:15px;
   line-height:1.6;
   opacity:.9;
-  margin-bottom:20px;
-}
-
-/* TYPING */
-.typing{
-  font-size:13px;
-  color:#25D366;
-  height:18px;
   margin-bottom:30px;
 }
 
-/* BUTTONS */
-.btn{
+/* LOADING BAR */
+.loader{
   width:100%;
-  padding:16px;
-  border-radius:50px;
-  border:none;
-  background:#25D366;
-  color:#fff;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
-  box-shadow:0 12px 30px rgba(0,0,0,.6);
-  animation:pulse 2s infinite;
-  margin-bottom:12px;
+  height:8px;
+  background:rgba(255,255,255,.15);
+  border-radius:20px;
+  overflow:hidden;
 }
 
-.btn-video{
-  width:100%;
-  padding:16px;
-  border-radius:50px;
-  border:none;
-  background:#007bff;
-  color:#fff;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
-  box-shadow:0 12px 30px rgba(0,0,0,.6);
-  animation:pulse 2s infinite;
-  margin-bottom:12px;
+.loader span{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#25D366,#7CFFB2);
+  animation:load 2s linear forwards;
 }
 
-/* AD BANNERS */
-.ad-300{
-  margin:20px auto;
-  text-align:center;
+@keyframes load{
+  to{width:100%;}
 }
 
-.ad-728{
-  margin:20px auto;
-  text-align:center;
-}
-
-/* PULSE ANIMATION */
-@keyframes pulse{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.04)}
-}
-
-.loading{
+.loading-text{
   margin-top:14px;
-  font-size:12px;
+  font-size:13px;
   opacity:.7;
-  display:none;
 }
 </style>
+
+<script>
+setTimeout(function(){
+  window.location.href =
+    "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+},2000);
+</script>
 </head>
 
 <body>
@@ -160,92 +133,32 @@ body{
 
   <!-- HEADER -->
   <div class="header">
-    <img src="assets/img/cover.jpg" class="avatar">
+    <img src="https://kodean.online/assets/img/cover.jpg" class="avatar">
     <div class="name-status">
-      <div class="name">Jessica Rae</div>
+      <div class="name">WhatsApp Contact</div>
       <div class="status">online</div>
     </div>
   </div>
 
   <!-- CONTENT -->
   <div class="content">
-    <img src="assets/img/cover.jpg" class="big-avatar">
+    <img src="https://kodean.online/assets/img/cover.jpg" class="big-avatar">
 
     <div class="bio">
       Hey 💕<br>
-      I'm bored right now…<br>
-      Let’s talk a little 😉
+      Tap to chat on WhatsApp
     </div>
 
-    <div class="typing" id="typing">typing…</div>
-
-    <!-- BUTTONS -->
-    <button class="btn" onclick="go()">Chat on WhatsApp</button>
-    <button class="btn-video" onclick="videoCall()">Video Call</button>
-
-    <div class="loading" id="loading">
-      Opening…
+    <div class="loader">
+      <span></span>
     </div>
 
-    <!-- AD 300x250 -->
-    <div class="ad-300">
-      <script>
-        atOptions = {
-          'key' : '125fdbe57fafa4cf459c771f0ca97afa',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'params' : {}
-        };
-      </script>
-      <script src="https://ceaslessivorygoats.com/125fdbe57fafa4cf459c771f0ca97afa/invoke.js"></script>
+    <div class="loading-text">
+      Connecting…
     </div>
-
-    <!-- AD 728x90 -->
-    <div class="ad-728">
-      <script>
-        atOptions = {
-          'key' : '0e7f4cceae9dd767902cb382d496cde2',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-        };
-      </script>
-      <script src="https://ceaslessivorygoats.com/0e7f4cceae9dd767902cb382d496cde2/invoke.js"></script>
-    </div>
-
   </div>
 
 </div>
-
-<script>
-// Typing animation
-const typing = document.getElementById('typing');
-let dots = 0;
-setInterval(()=>{
-  dots = (dots+1)%4;
-  typing.textContent = "typing" + ".".repeat(dots);
-},500);
-
-// Chat WhatsApp
-function go(){
-  document.getElementById('loading').textContent = 'Opening chat…';
-  document.getElementById('loading').style.display='block';
-  setTimeout(()=>{
-    window.location.href="https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
-  },1200);
-}
-
-// Video Call - Smartlink Adsterra
-function videoCall(){
-  document.getElementById('loading').textContent = 'Starting video call…';
-  document.getElementById('loading').style.display='block';
-  setTimeout(()=>{
-    window.location.href="https://ceaslessivorygoats.com/aj1qaybgif?key=a02b51563f782583f6bc08d8420f0454";
-  },1200);
-}
-</script>
 
 </body>
 </html>
