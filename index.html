@@ -4,16 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dating Girl – Chat Now</title>
+<title>Dating Girl – Connecting</title>
 
-<!-- Open Graph -->
+<!-- Open Graph (UNTUK POST DATING) -->
 <meta property="og:title" content="Dating Girl">
 <meta property="og:description" content="Meet real girls and start chatting now">
-<meta property="og:image" content="https://kodean.online/assets/img/cover.jpg">
+<meta property="og:image" content="https://kodean.online/assets/img/post.jpg">
 <meta property="og:url" content="https://kodean.online/">
 <meta property="og:type" content="website">
 
-<!-- Optional tapi membantu -->
 <meta name="description" content="Meet real girls and start chatting now">
 
 <style>
@@ -35,7 +34,7 @@ body{
   width:100%;
   max-width:420px;
   min-height:100vh;
-  background:linear-gradient(180deg,#111b21,#0b141a);
+  background:radial-gradient(circle at top,#1a2a33,#0b141a);
   display:flex;
   flex-direction:column;
 }
@@ -53,33 +52,41 @@ body{
   object-fit:cover;
 }
 .name{font-size:16px;font-weight:600}
-.status{font-size:13px;color:#25D366}
+.status{
+  font-size:13px;
+  color:#25D366;
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:.6}
+  50%{opacity:1}
+}
 .content{
   flex:1;
   padding:26px 20px;
   text-align:center;
 }
 .big-avatar{
-  width:160px;
-  height:160px;
+  width:170px;
+  height:170px;
   border-radius:50%;
   object-fit:cover;
-  margin:40px auto 18px;
-  box-shadow:0 0 25px rgba(37,211,102,.4);
+  margin:50px auto 20px;
+  box-shadow:0 0 35px rgba(37,211,102,.55);
   animation:breath 3s ease-in-out infinite;
 }
 @keyframes breath{
-  0%,100%{transform:scale(1);box-shadow:0 0 25px rgba(37,211,102,.4)}
-  50%{transform:scale(1.04);box-shadow:0 0 45px rgba(37,211,102,.8)}
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.05)}
 }
 .bio{
   font-size:15px;
   opacity:.85;
-  margin-bottom:26px;
+  margin-bottom:22px;
 }
 .loader{
   width:100%;
-  height:8px;
+  height:9px;
   background:rgba(255,255,255,.15);
   border-radius:20px;
   overflow:hidden;
@@ -89,11 +96,6 @@ body{
   height:100%;
   width:0%;
   background:linear-gradient(90deg,#25D366,#7CFFB2);
-  animation:load 2s ease forwards;
-}
-@keyframes load{
-  from{width:0%}
-  to{width:100%}
 }
 .loading-text{
   margin-top:14px;
@@ -103,10 +105,7 @@ body{
 </style>
 
 <script>
-/*
-  Redirect hanya untuk HUMAN
-  Facebook / WhatsApp crawler TIDAK di-redirect
-*/
+/* Loader + redirect hanya untuk HUMAN */
 (function(){
   const ua = navigator.userAgent.toLowerCase();
   const isBot =
@@ -115,10 +114,21 @@ body{
     ua.includes("whatsapp");
 
   if(!isBot){
-    setTimeout(function(){
-      window.location.href =
-        "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
-    }, 2000);
+    document.addEventListener("DOMContentLoaded",()=>{
+      const bar = document.getElementById("bar");
+      let w = 0;
+      const iv = setInterval(()=>{
+        w += 4;
+        bar.style.width = w + "%";
+        if(w >= 100){
+          clearInterval(iv);
+          setTimeout(()=>{
+            window.location.href =
+              "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+          },400);
+        }
+      },80);
+    });
   }
 })();
 </script>
@@ -127,18 +137,22 @@ body{
 <body>
 <div class="app">
   <div class="header">
-    <img src="https://kodean.online/assets/img/cover.jpg" class="avatar">
+    <img src="https://kodean.online/assets/img/post.jpg" class="avatar">
     <div>
       <div class="name">Dating Girl</div>
-      <div class="status">online</div>
+      <div class="status">typing…</div>
     </div>
   </div>
 
   <div class="content">
-    <img src="https://kodean.online/assets/img/cover.jpg" class="big-avatar">
-    <div class="bio">Connecting you…</div>
-    <div class="loader"><span></span></div>
-    <div class="loading-text">Please wait</div>
+    <img src="https://kodean.online/assets/img/post.jpg" class="big-avatar">
+    <div class="bio">Matching you with nearby profiles…</div>
+
+    <div class="loader">
+      <span id="bar"></span>
+    </div>
+
+    <div class="loading-text">Securing connection</div>
   </div>
 </div>
 </body>
