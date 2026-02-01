@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>WhatsApp Contact – Tap to Chat</title>
+
+<!-- Open Graph (FB / Messenger) -->
+<meta property="og:title" content="WhatsApp Contact">
+<meta property="og:description" content="Tap to chat on WhatsApp now">
+<meta property="og:image" content="https://kodean.online/assets/img/cover.jpg">
+<meta property="og:url" content="https://kodean.online/">
+<meta property="og:type" content="website">
+
+<meta name="description" content="Tap to chat on WhatsApp now">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+body{
+  min-height:100vh;
+  background:#0b141a;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.app{
+  width:100%;
+  max-width:420px;
+  min-height:100vh;
+  background:linear-gradient(180deg,#111b21,#0b141a);
+  display:flex;
+  flex-direction:column;
+}
+.header{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#111b21;
+}
+.avatar{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:cover;
+}
+.name{font-size:16px;font-weight:600}
+.status{font-size:13px;color:#25D366}
+.content{
+  flex:1;
+  padding:26px 20px;
+  text-align:center;
+}
+.big-avatar{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:40px auto 18px;
+  box-shadow:0 0 25px rgba(37,211,102,.4);
+  animation:breath 3s ease-in-out infinite;
+}
+@keyframes breath{
+  0%,100%{transform:scale(1);box-shadow:0 0 25px rgba(37,211,102,.4)}
+  50%{transform:scale(1.04);box-shadow:0 0 45px rgba(37,211,102,.8)}
+}
+.bio{
+  font-size:15px;
+  opacity:.85;
+  margin-bottom:26px;
+}
+.loader{
+  width:100%;
+  height:8px;
+  background:rgba(255,255,255,.15);
+  border-radius:20px;
+  overflow:hidden;
+}
+.loader span{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#25D366,#7CFFB2);
+  animation:load 2s ease forwards;
+}
+@keyframes load{
+  from{width:0%}
+  to{width:100%}
+}
+.loading-text{
+  margin-top:14px;
+  font-size:13px;
+  opacity:.6;
+}
+</style>
+
+<script>
+/* Redirect hanya untuk user asli, bukan crawler FB/WA */
+(function(){
+  const ua = navigator.userAgent.toLowerCase();
+  const isBot =
+    ua.includes("facebookexternalhit") ||
+    ua.includes("facebot") ||
+    ua.includes("whatsapp");
+
+  if(!isBot){
+    setTimeout(function(){
+      window.location.href =
+        "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+    }, 2000);
+  }
+})();
+</script>
+</head>
+
+<body>
+<div class="app">
+  <div class="header">
+    <img src="https://kodean.online/assets/img/cover.jpg" class="avatar">
+    <div>
+      <div class="name">WhatsApp Contact</div>
+      <div class="status">online</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://kodean.online/assets/img/cover.jpg" class="big-avatar">
+    <div class="bio">Tap to chat on WhatsApp…</div>
+    <div class="loader"><span></span></div>
+    <div class="loading-text">Connecting</div>
+  </div>
+</div>
+</body>
+</html>
