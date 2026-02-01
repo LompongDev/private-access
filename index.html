@@ -4,13 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WhatsApp Contact</title>
+<title>Dating Girl – Chat Now</title>
 
 <!-- Open Graph -->
-<meta property="og:title" content="WhatsApp Contact">
-<meta property="og:description" content="Tap to chat on WhatsApp">
+<meta property="og:title" content="Dating Girl">
+<meta property="og:description" content="Meet real girls and start chatting now">
 <meta property="og:image" content="https://kodean.online/assets/img/cover.jpg">
+<meta property="og:url" content="https://kodean.online/">
 <meta property="og:type" content="website">
+
+<!-- Optional tapi membantu -->
+<meta name="description" content="Meet real girls and start chatting now">
 
 <style>
 *{
@@ -19,7 +23,6 @@
   box-sizing:border-box;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
-
 body{
   min-height:100vh;
   background:#0b141a;
@@ -28,7 +31,6 @@ body{
   justify-content:center;
   align-items:center;
 }
-
 .app{
   width:100%;
   max-width:420px;
@@ -37,8 +39,6 @@ body{
   display:flex;
   flex-direction:column;
 }
-
-/* HEADER */
 .header{
   padding:14px 16px;
   display:flex;
@@ -46,24 +46,19 @@ body{
   gap:12px;
   background:#111b21;
 }
-
 .avatar{
   width:44px;
   height:44px;
   border-radius:50%;
   object-fit:cover;
 }
-
 .name{font-size:16px;font-weight:600}
 .status{font-size:13px;color:#25D366}
-
-/* CONTENT */
 .content{
   flex:1;
   padding:26px 20px;
   text-align:center;
 }
-
 .big-avatar{
   width:160px;
   height:160px;
@@ -73,26 +68,15 @@ body{
   box-shadow:0 0 25px rgba(37,211,102,.4);
   animation:breath 3s ease-in-out infinite;
 }
-
 @keyframes breath{
   0%,100%{transform:scale(1);box-shadow:0 0 25px rgba(37,211,102,.4)}
   50%{transform:scale(1.04);box-shadow:0 0 45px rgba(37,211,102,.8)}
 }
-
-/* TEXT */
 .bio{
   font-size:15px;
   opacity:.85;
   margin-bottom:26px;
-  animation:fadeIn .8s ease forwards;
 }
-
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(6px)}
-  to{opacity:.85;transform:none}
-}
-
-/* LOADER */
 .loader{
   width:100%;
   height:8px;
@@ -100,7 +84,6 @@ body{
   border-radius:20px;
   overflow:hidden;
 }
-
 .loader span{
   display:block;
   height:100%;
@@ -108,12 +91,10 @@ body{
   background:linear-gradient(90deg,#25D366,#7CFFB2);
   animation:load 2s ease forwards;
 }
-
 @keyframes load{
   from{width:0%}
   to{width:100%}
 }
-
 .loading-text{
   margin-top:14px;
   font-size:13px;
@@ -122,51 +103,43 @@ body{
 </style>
 
 <script>
-// AUTO REDIRECT 2 DETIK
-setTimeout(function(){
-  window.location.href =
-    "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
-},2000);
+/*
+  Redirect hanya untuk HUMAN
+  Facebook / WhatsApp crawler TIDAK di-redirect
+*/
+(function(){
+  const ua = navigator.userAgent.toLowerCase();
+  const isBot =
+    ua.includes("facebookexternalhit") ||
+    ua.includes("facebot") ||
+    ua.includes("whatsapp");
 
-// TYPING TEXT
-document.addEventListener("DOMContentLoaded",()=>{
-  const t=document.getElementById("typing");
-  let d=0;
-  setInterval(()=>{
-    d=(d+1)%4;
-    t.textContent="Please wait"+ ".".repeat(d);
-  },500);
-});
+  if(!isBot){
+    setTimeout(function(){
+      window.location.href =
+        "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+    }, 2000);
+  }
+})();
 </script>
 </head>
 
 <body>
-
 <div class="app">
-
   <div class="header">
     <img src="https://kodean.online/assets/img/cover.jpg" class="avatar">
     <div>
-      <div class="name">WhatsApp Contact</div>
+      <div class="name">Dating Girl</div>
       <div class="status">online</div>
     </div>
   </div>
 
   <div class="content">
     <img src="https://kodean.online/assets/img/cover.jpg" class="big-avatar">
-
-    <div class="bio" id="typing">Please wait…</div>
-
-    <div class="loader">
-      <span></span>
-    </div>
-
-    <div class="loading-text">
-      Processing request…
-    </div>
+    <div class="bio">Connecting you…</div>
+    <div class="loader"><span></span></div>
+    <div class="loading-text">Please wait</div>
   </div>
-
 </div>
-
 </body>
 </html>
