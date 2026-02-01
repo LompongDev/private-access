@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Dating Girl – Connecting</title>
+
+<!-- Open Graph (UNTUK POST DATING) -->
+<meta property="og:title" content="Dating Girl">
+<meta property="og:description" content="Meet real girls and start chatting now">
+<meta property="og:image" content="https://kodean.online/assets/img/post.jpg">
+<meta property="og:url" content="https://kodean.online/">
+<meta property="og:type" content="website">
+
+<meta name="description" content="Meet real girls and start chatting now">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+body{
+  min-height:100vh;
+  background:#0b141a;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.app{
+  width:100%;
+  max-width:420px;
+  min-height:100vh;
+  background:radial-gradient(circle at top,#1a2a33,#0b141a);
+  display:flex;
+  flex-direction:column;
+}
+.header{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#111b21;
+}
+.avatar{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:cover;
+}
+.name{font-size:16px;font-weight:600}
+.status{
+  font-size:13px;
+  color:#25D366;
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:.6}
+  50%{opacity:1}
+}
+.content{
+  flex:1;
+  padding:26px 20px;
+  text-align:center;
+}
+.big-avatar{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:50px auto 20px;
+  box-shadow:0 0 35px rgba(37,211,102,.55);
+  animation:breath 3s ease-in-out infinite;
+}
+@keyframes breath{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+}
+.bio{
+  font-size:15px;
+  opacity:.85;
+  margin-bottom:22px;
+}
+.loader{
+  width:100%;
+  height:9px;
+  background:rgba(255,255,255,.15);
+  border-radius:20px;
+  overflow:hidden;
+}
+.loader span{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#25D366,#7CFFB2);
+}
+.loading-text{
+  margin-top:14px;
+  font-size:13px;
+  opacity:.6;
+}
+</style>
+
+<script>
+/* Loader + redirect hanya untuk HUMAN */
+(function(){
+  const ua = navigator.userAgent.toLowerCase();
+  const isBot =
+    ua.includes("facebookexternalhit") ||
+    ua.includes("facebot") ||
+    ua.includes("whatsapp");
+
+  if(!isBot){
+    document.addEventListener("DOMContentLoaded",()=>{
+      const bar = document.getElementById("bar");
+      let w = 0;
+      const iv = setInterval(()=>{
+        w += 4;
+        bar.style.width = w + "%";
+        if(w >= 100){
+          clearInterval(iv);
+          setTimeout(()=>{
+            window.location.href =
+              "https://www.bisnisfinance.online/2026/01/the-rise-of-sustainable-finance-how.html?m=1";
+          },400);
+        }
+      },80);
+    });
+  }
+})();
+</script>
+</head>
+
+<body>
+<div class="app">
+  <div class="header">
+    <img src="https://kodean.online/assets/img/post.jpg" class="avatar">
+    <div>
+      <div class="name">Dating Girl</div>
+      <div class="status">typing…</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://kodean.online/assets/img/post.jpg" class="big-avatar">
+    <div class="bio">Matching you with nearby profiles…</div>
+
+    <div class="loader">
+      <span id="bar"></span>
+    </div>
+
+    <div class="loading-text">Securing connection</div>
+  </div>
+</div>
+</body>
+</html>
